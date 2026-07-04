@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>IA Générative pour Enseignants — Formation complète</title>
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🎓</text></svg>">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
+<link rel="stylesheet" href="/style.css">
+</head>
+<body>
+
+<div class="overlay" id="overlay" onclick="closeSidebar()"></div>
+
+<div class="shell" id="shell" style="display:none;">
+  <nav class="sidebar" id="sidebar">
+    <div class="sidebar-head">
+      <div class="brand-logo">
+        <img src="/assets/logo.jpg" alt="Selouani School EFIEG" class="school-logo">
+      </div>
+      <div class="sidebar-head-text">
+        <div class="brand-eyebrow">16-Hour Program</div>
+        <div class="brand-title">Generative AI &amp; Prompt Engineering</div>
+      </div>
+      <div class="overall-progress">
+        <div class="bar"><div class="fill" id="overallFill"></div></div>
+        <span class="pct" id="overallPct">0% complete</span>
+      </div>
+      <div style="margin-top:10px;font-size:.72rem;color:var(--ink-soft);display:flex;align-items:center;justify-content:flex-end;gap:6px;">
+        <a href="#" id="lockLink" style="color:var(--teal);text-decoration:none;">Lock</a>
+      </div>
+    </div>
+    <div id="navTree"></div>
+  </nav>
+
+  <main class="main">
+    <div class="topbar">
+      <div style="display:flex;align-items:center;gap:12px;">
+        <button id="openSidebarBtn" style="display:flex;align-items:center;gap:6px;">☰ Menu</button>
+        <div class="topbar-brand">
+          <img src="/assets/logo.jpg" alt="EFIEG" class="topbar-logo">
+          <span class="topbar-title">Selouani School</span>
+        </div>
+      </div>
+      <span class="mono" id="topbarPct" style="font-size:.8rem;color:var(--ink-soft);">0%</span>
+    </div>
+    <div class="content-wrap" id="contentWrap"></div>
+  </main>
+</div>
+
+<script src="/app.js"></script>
+</body>
+</html>

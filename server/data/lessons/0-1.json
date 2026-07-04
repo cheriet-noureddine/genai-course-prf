@@ -1,0 +1,9 @@
+{
+  "mi": 0,
+  "li": 1,
+  "moduleTitle": "Prendre ses marques avec l'IA",
+  "title": "Confidentialité : ce qu'il ne faut jamais coller dans un chatbot",
+  "time": "15 min",
+  "body": "\n        <p>Les outils grand public (versions gratuites de ChatGPT, Claude, Gemini...) peuvent parfois conserver ou utiliser ce que vous saisissez. Avant de coller un texte, posez-vous la question : <em>« Ce contenu identifie-t-il un élève ? »</em></p>\n        <ul>\n          <li><strong>À ne jamais coller :</strong> noms complets d'élèves, notes individuelles, situations familiales, données de santé, coordonnées.</li>\n          <li><strong>Ce qu'on peut généralement partager :</strong> un texte anonymisé, une consigne d'exercice, un extrait de programme, un travail rendu sans nom.</li>\n        </ul>\n        <div class=\"callout\">💡 Une astuce simple : remplacez les noms par « l'élève A », « l'élève B » avant de coller un texte à analyser.</div>\n        <p>Vérifiez aussi si votre établissement a une politique ou une liste d'outils autorisés — cela évite bien des soucis.</p>\n      ",
+  "diagramKey": "shareSafety"
+}

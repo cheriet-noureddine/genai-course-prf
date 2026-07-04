@@ -1,0 +1,9 @@
+{
+  "mi": 1,
+  "li": 0,
+  "moduleTitle": "Bien formuler ses prompts",
+  "title": "Anatomie d'un bon prompt : public, format, contraintes",
+  "time": "20 min",
+  "body": "\n        <p>Un prompt efficace répond en général à trois questions : <strong>pour qui</strong> (le public), <strong>sous quelle forme</strong> (le format) et <strong>avec quelles limites</strong> (les contraintes).</p>\n        <div class=\"compare\">\n          <div class=\"card bad\"><span class=\"tag\">Vague</span>\"Fais-moi un exercice de maths.\"</div>\n          <div class=\"card good\"><span class=\"tag\">Précis</span>\"Crée un exercice de maths sur les fractions pour une classe de 6e, avec 5 questions à difficulté croissante et le corrigé séparé.\"</div>\n        </div>\n        <div class=\"callout\">💡 Un bon test : si vous donniez ce prompt à un collègue remplaçant qui ne connaît pas votre classe, comprendrait-il exactement ce qu'il doit produire ?</div>\n      ",
+  "diagramKey": "promptAnatomy"
+}

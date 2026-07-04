@@ -1,0 +1,60 @@
+{
+  "title": "Quiz 1 — Prendre ses marques avec l'IA",
+  "questions": [
+    {
+      "q": "Comment un chatbot IA génère-t-il une réponse ?",
+      "opts": [
+        "Il cherche dans une base de données de réponses préenregistrées",
+        "Il prédit, mot après mot, la suite la plus probable du texte",
+        "Il copie un texte trouvé sur Internet en temps réel",
+        "Il envoie la question à un enseignant humain"
+      ],
+      "correct": 1,
+      "explain": "L'IA génère chaque réponse en prédisant statistiquement la suite du texte, sans base de réponses toutes faites."
+    },
+    {
+      "q": "Que ne devez-vous jamais coller dans un chatbot grand public ?",
+      "opts": [
+        "Un extrait de programme officiel",
+        "Le nom complet et la note d'un élève",
+        "Une consigne d'exercice générique",
+        "Un texte déjà publié en ligne"
+      ],
+      "correct": 1,
+      "explain": "Les données identifiant un élève (nom, note...) ne doivent pas être partagées avec un outil grand public sans autorisation."
+    },
+    {
+      "q": "Quel élément améliore le plus un prompt pour une accroche de cours ?",
+      "opts": [
+        "Écrire le prompt en majuscules",
+        "Préciser le niveau des élèves et le ton souhaité",
+        "Ne rien préciser pour laisser l'IA libre",
+        "Demander la réponse la plus longue possible"
+      ],
+      "correct": 1,
+      "explain": "Préciser le public et le ton permet à l'IA de calibrer une réponse directement utilisable."
+    },
+    {
+      "q": "Quel outil IA est développé par Anthropic ?",
+      "opts": [
+        "Copilot",
+        "Gemini",
+        "Claude",
+        "ChatGPT"
+      ],
+      "correct": 2,
+      "explain": "Claude est l'assistant conversationnel développé par Anthropic."
+    },
+    {
+      "q": "Avant d'adopter un outil IA en classe, que faut-il vérifier en priorité ?",
+      "opts": [
+        "Sa couleur d'interface",
+        "S'il est gratuit et autorisé par l'établissement",
+        "S'il fonctionne uniquement en anglais",
+        "S'il propose des jeux vidéo"
+      ],
+      "correct": 1,
+      "explain": "La gratuité et l'autorisation de l'établissement sont les critères de base avant toute adoption d'un outil."
+    }
+  ]
+}

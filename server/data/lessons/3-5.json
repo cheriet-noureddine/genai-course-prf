@@ -1,0 +1,12 @@
+{
+  "mi": 3,
+  "li": 5,
+  "moduleTitle": "AI for Real-World Tasks",
+  "moduleNum": "04",
+  "moduleLevel": "Intermediate",
+  "partLabel": "Part 2 — Core Techniques",
+  "title": "Lab: solve 3 different real-world tasks using prompts alone",
+  "time": "20 min",
+  "body": "\n        <div class=\"exercise\">\n          <div class=\"ex-head\">🛠 Lab exercise</div>\n          <p>Pick three tasks below (or substitute your own real tasks) — one from each category — and write a full, well-formed prompt for each:</p>\n          <ol>\n            <li><strong>Writing:</strong> Draft a short, polite message declining a meeting invite while proposing an alternative time.</li>\n            <li><strong>Coding or data:</strong> Convert a block of messy CSV-style text into clean JSON.</li>\n            <li><strong>Creative:</strong> Brainstorm 10 taglines for a fictional product of your choosing.</li>\n          </ol>\n          <p>For each, include task, context, format, and constraints — then evaluate whether the output matched what you specified.</p>\n        </div>\n      ",
+  "diagramKey": null
+}

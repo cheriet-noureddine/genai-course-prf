@@ -1,0 +1,60 @@
+{
+  "title": "Quiz 7 — Aller plus loin",
+  "questions": [
+    {
+      "q": "À quoi servent les instructions permanentes d'un assistant IA ?",
+      "opts": [
+        "À bloquer l'accès à l'outil",
+        "À éviter de répéter son contexte (matière, niveaux) à chaque conversation",
+        "À changer la langue de l'interface uniquement",
+        "À supprimer l'historique des conversations"
+      ],
+      "correct": 1,
+      "explain": "Les instructions permanentes appliquent automatiquement votre contexte à toutes les futures conversations."
+    },
+    {
+      "q": "Avant d'envoyer la photo d'une copie manuscrite à une IA, il faut :",
+      "opts": [
+        "Retirer ou masquer le nom de l'élève",
+        "Ajouter la note de l'élève",
+        "Envoyer directement, sans précaution",
+        "Flouter tout le texte"
+      ],
+      "correct": 0,
+      "explain": "Masquer les informations identifiantes protège la confidentialité de l'élève avant tout traitement par l'IA."
+    },
+    {
+      "q": "Quelle habitude construit le plus de compétence durable en prompting ?",
+      "opts": [
+        "Changer d'outil chaque semaine sans raison",
+        "Diagnostiquer pourquoi un prompt n'a pas fonctionné avant de réessayer",
+        "Ne jamais relire ses prompts passés",
+        "Éviter toute pratique jusqu'à maîtriser la théorie"
+      ],
+      "correct": 1,
+      "explain": "Diagnostiquer les échecs (vague ? mauvais format ? contexte manquant ?) construit une vraie compétence, contrairement aux essais au hasard."
+    },
+    {
+      "q": "L'usage multimodal permet notamment de :",
+      "opts": [
+        "Analyser une image, comme une copie manuscrite ou un schéma",
+        "Utiliser l'IA uniquement pour du texte",
+        "Remplacer complètement l'évaluation orale",
+        "Interdire tout usage d'images"
+      ],
+      "correct": 0,
+      "explain": "Le multimodal permet à l'IA de traiter des images en plus du texte, comme une copie ou un schéma photographié."
+    },
+    {
+      "q": "Pour rester à jour sans se disperser, il est conseillé de :",
+      "opts": [
+        "Suivre absolument toutes les nouveautés IA chaque jour",
+        "Se concentrer sur l'outil principal utilisé et pratiquer régulièrement",
+        "Ne jamais changer d'outil, même si un meilleur existe",
+        "Ignorer complètement les évolutions de l'IA"
+      ],
+      "correct": 1,
+      "explain": "Se concentrer sur son outil principal et pratiquer régulièrement est plus durable que de suivre toutes les nouveautés."
+    }
+  ]
+}

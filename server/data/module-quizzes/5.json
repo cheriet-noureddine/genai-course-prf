@@ -1,0 +1,60 @@
+{
+  "title": "Quiz 6 — Intégration dans le quotidien de classe",
+  "questions": [
+    {
+      "q": "Quel est l'intérêt d'un modèle de prompt réutilisable ?",
+      "opts": [
+        "Il ne peut être utilisé qu'une seule fois",
+        "Il fait gagner du temps en réutilisant une structure éprouvée",
+        "Il remplace le programme officiel",
+        "Il empêche toute personnalisation"
+      ],
+      "correct": 1,
+      "explain": "Un modèle réutilisable capitalise sur une structure qui fonctionne pour gagner du temps à chaque nouvelle préparation."
+    },
+    {
+      "q": "Quel est le garde-fou essentiel lors de l'usage de l'IA pour la correction ?",
+      "opts": [
+        "Faire confiance aveuglément à la note proposée",
+        "Toujours valider et ajuster soi-même la note et le commentaire final",
+        "Ne jamais utiliser l'IA pour cela",
+        "Donner tous les noms d'élèves à l'IA"
+      ],
+      "correct": 1,
+      "explain": "L'enseignant doit toujours garder la décision finale sur la note ; l'IA n'est qu'une aide au repérage."
+    },
+    {
+      "q": "Concernant les élèves et l'IA, quelle approche est recommandée ?",
+      "opts": [
+        "Interdire totalement l'IA dans tous les cas",
+        "Leur apprendre un usage transparent et responsable",
+        "Ne jamais en parler en classe",
+        "Les laisser faire sans aucune règle"
+      ],
+      "correct": 1,
+      "explain": "Expliquer un usage transparent et responsable est plus efficace qu'une interdiction totale généralement peu applicable."
+    },
+    {
+      "q": "Que doit contenir une \"boîte à outils IA\" personnelle ?",
+      "opts": [
+        "Uniquement un mot de passe",
+        "Des prompts modèles, des outils préférés et ses règles de vérification",
+        "La liste de tous les élèves",
+        "Un lien vers un moteur de recherche uniquement"
+      ],
+      "correct": 1,
+      "explain": "La boîte à outils rassemble prompts, outils et règles personnelles prêts à être réutilisés au quotidien."
+    },
+    {
+      "q": "Avant de généraliser un outil IA avec ses classes, il faut d'abord :",
+      "opts": [
+        "Vérifier la politique de l'établissement à ce sujet",
+        "Demander l'avis des élèves uniquement",
+        "Ne rien vérifier",
+        "Changer d'outil chaque semaine"
+      ],
+      "correct": 0,
+      "explain": "Chaque établissement peut avoir ses propres règles d'usage de l'IA, à vérifier avant toute généralisation."
+    }
+  ]
+}

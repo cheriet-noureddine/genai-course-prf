@@ -1,0 +1,60 @@
+{
+  "title": "Quiz 3 — Documents et contenus pédagogiques",
+  "questions": [
+    {
+      "q": "Avant de coller un travail d'élève dans une IA pour le résumer, il faut :",
+      "opts": [
+        "Ajouter la note de l'élève",
+        "Retirer le nom de l'élève",
+        "Traduire le texte en anglais",
+        "Rien faire de particulier"
+      ],
+      "correct": 1,
+      "explain": "Retirer les informations identifiantes protège la confidentialité de l'élève avant tout traitement par l'IA."
+    },
+    {
+      "q": "Adapter un texte à différents niveaux de lecture, c'est :",
+      "opts": [
+        "Le traduire dans une autre langue",
+        "Réécrire le contenu avec un vocabulaire adapté, sans perdre le sens",
+        "Le rendre plus long à chaque fois",
+        "Supprimer les exemples"
+      ],
+      "correct": 1,
+      "explain": "L'adaptation conserve le sens du texte tout en ajustant la complexité du vocabulaire et des phrases."
+    },
+    {
+      "q": "Que devez-vous toujours faire avec un corrigé généré par l'IA avant de le distribuer ?",
+      "opts": [
+        "Le publier immédiatement",
+        "Le relire et vérifier son exactitude",
+        "L'imprimer sans le lire",
+        "Le transformer en audio"
+      ],
+      "correct": 1,
+      "explain": "Les corrigés générés doivent être vérifiés par l'enseignant avant toute diffusion, car l'IA peut se tromper."
+    },
+    {
+      "q": "Pour un email aux parents, quel élément est essentiel de préciser dans le prompt ?",
+      "opts": [
+        "La police d'écriture",
+        "Le ton et l'objet du message",
+        "Le nombre d'élèves de la classe",
+        "La couleur du papier"
+      ],
+      "correct": 1,
+      "explain": "Le ton et l'objet permettent d'obtenir un email directement adapté au contexte de communication."
+    },
+    {
+      "q": "Dans l'atelier de résumé de PDF, le livrable final est :",
+      "opts": [
+        "Une vidéo de 10 minutes",
+        "Une fiche d'une page avec idée principale, points clés et questions",
+        "Un tableau Excel",
+        "Un diaporama de 20 diapositives"
+      ],
+      "correct": 1,
+      "explain": "L'atelier vise une fiche synthétique d'une page, directement utilisable avec les élèves."
+    }
+  ]
+}

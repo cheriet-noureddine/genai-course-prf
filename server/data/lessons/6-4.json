@@ -1,0 +1,12 @@
+{
+  "mi": 6,
+  "li": 4,
+  "moduleTitle": "Prompt Engineering at Scale",
+  "moduleNum": "07",
+  "moduleLevel": "Advanced",
+  "partLabel": "Part 4 — Mastery",
+  "title": "The future of prompt engineering: where the field is heading",
+  "time": "15 min",
+  "body": "\n        <p>A few directions worth watching (treat these as informed trends, not certainties):</p>\n        <ul>\n          <li><strong>Less reliance on \"tricks\"</strong> — as models get better, some workarounds may become less necessary for simpler tasks, though they'll remain valuable for hard problems.</li>\n          <li><strong>Growth of agentic systems</strong> — more workflows will involve AI that takes multi-step autonomous action, shifting the skill toward \"designing the system and guardrails around an agent.\"</li>\n          <li><strong>Native multi-modality</strong> — text, image, audio, and video are increasingly treated as one combined input space.</li>\n          <li><strong>Standardized evaluation</strong> — rigorous testing is becoming as core a skill as writing the prompt itself.</li>\n        </ul>\n        <p>The constant underneath all of this: clear thinking, specificity, and structured communication will keep mattering, even as the exact techniques evolve.</p>\n      ",
+  "diagramKey": null
+}

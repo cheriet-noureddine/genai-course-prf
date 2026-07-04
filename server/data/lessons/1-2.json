@@ -1,0 +1,9 @@
+{
+  "mi": 1,
+  "li": 2,
+  "moduleTitle": "Bien formuler ses prompts",
+  "title": "Demander des formats précis : tableaux, grilles à puces, QCM",
+  "time": "20 min",
+  "body": "\n        <p>Le format de sortie doit être demandé explicitement — l'IA ne le devine pas toujours correctement.</p>\n        <ul>\n          <li><strong>Tableau</strong> — \"Présente ceci dans un tableau avec les colonnes : Critère, Niveau attendu, Exemple.\"</li>\n          <li><strong>Grille à puces</strong> — \"Donne-moi 5 points clés, un par ligne.\"</li>\n          <li><strong>QCM</strong> — \"Crée un QCM de 8 questions avec 4 propositions chacune, une seule bonne réponse.\"</li>\n        </ul>\n        <div class=\"example\">\n          <span class=\"ex-label\">Exemple — Demande de QCM</span>\n          <pre>Crée un QCM de 6 questions sur la Révolution française pour\ndes élèves de 4e. Une seule bonne réponse par question.\nIndique la bonne réponse à la fin, séparément.</pre>\n        </div>\n      ",
+  "diagramKey": null
+}

@@ -1,0 +1,9 @@
+{
+  "mi": 1,
+  "li": 4,
+  "moduleTitle": "Bien formuler ses prompts",
+  "title": "Atelier : transformer 3 demandes vagues en prompts précis",
+  "time": "15 min",
+  "body": "\n        <div class=\"exercise\">\n          <div class=\"ex-head\">🛠 Atelier</div>\n          <p>Réécrivez chacune de ces demandes vagues en un prompt précis, en ajoutant public, format et contraintes :</p>\n          <ol>\n            <li><strong>Vague :</strong> \"Fais-moi une fiche sur les volcans.\"</li>\n            <li><strong>Vague :</strong> \"Écris un mot pour les parents.\"</li>\n            <li><strong>Vague :</strong> \"Prépare un contrôle.\"</li>\n          </ol>\n          <p>Pour chaque reformulation, notez les éléments que vous avez ajoutés. Testez ensuite votre version améliorée dans un assistant IA et comparez le résultat à ce que vous auriez obtenu avec la demande initiale.</p>\n        </div>\n      ",
+  "diagramKey": "promptQualityBar"
+}

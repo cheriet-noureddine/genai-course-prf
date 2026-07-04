@@ -1,0 +1,12 @@
+{
+  "mi": 4,
+  "li": 4,
+  "moduleTitle": "System Prompts & Model Behavior",
+  "moduleNum": "05",
+  "moduleLevel": "Intermediate",
+  "partLabel": "Part 3 — Going Deeper",
+  "title": "Safety and ethical considerations in AI use",
+  "time": "20 min",
+  "body": "\n        <p>Using AI responsibly means staying aware of a few recurring risk areas:</p>\n        <ul>\n          <li><strong>Bias</strong> — models learn from human-generated data, which contains human biases. Review sensitive content critically.</li>\n          <li><strong>Misinformation</strong> — hallucinated facts can spread if not verified before being shared.</li>\n          <li><strong>Privacy</strong> — be cautious about pasting sensitive personal, medical, or financial data into AI tools whose data policies you haven't checked.</li>\n          <li><strong>Attribution and originality</strong> — AI-generated content can closely resemble copyrighted material; understand licensing terms, especially for commercial work.</li>\n          <li><strong>Overreliance</strong> — leaning on AI for judgment calls it isn't equipped to make (medical, legal, financial decisions) without appropriate human review.</li>\n        </ul>\n      ",
+  "diagramKey": null
+}

@@ -1,0 +1,9 @@
+{
+  "mi": 6,
+  "li": 2,
+  "moduleTitle": "Aller plus loin",
+  "title": "Rester à jour et construire une habitude durable",
+  "time": "20 min",
+  "body": "\n        <p>Le domaine de l'IA évolue vite : de nouveaux outils et fonctionnalités apparaissent régulièrement. Plutôt que de tout suivre, privilégiez la régularité.</p>\n        <ul>\n          <li>Pratiquez sur de vraies tâches, même petites, plutôt que d'attendre le moment « parfait ».</li>\n          <li>Notez et réutilisez les prompts qui fonctionnent bien (votre boîte à outils du module 6).</li>\n          <li>Consultez de temps en temps les nouveautés de l'outil que vous utilisez le plus.</li>\n        </ul>\n        <div class=\"callout\">💡 Diagnostiquer pourquoi un prompt n'a pas fonctionné (trop vague ? mauvais format ? contexte manquant ?) construit bien plus de compétence que d'essayer au hasard.</div>\n      ",
+  "diagramKey": "habitTrendChart"
+}

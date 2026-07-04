@@ -1,0 +1,9 @@
+{
+  "mi": 1,
+  "li": 1,
+  "moduleTitle": "Bien formuler ses prompts",
+  "title": "Donner un rôle à l'IA (\"agis comme un spécialiste de la lecture en CM2...\")",
+  "time": "20 min",
+  "body": "\n        <p>Demander à l'IA d'endosser un rôle précis oriente instantanément son vocabulaire, sa profondeur d'explication et son ton.</p>\n        <div class=\"example\">\n          <span class=\"ex-label\">Exemple</span>\n          <pre>Agis comme un spécialiste de la lecture en CM2. Propose-moi\n3 activités courtes pour aider un élève qui confond encore\ncertains sons proches (comme \"p\" et \"b\").</pre>\n        </div>\n        <p>Cette technique fonctionne aussi pour obtenir des points de vue différents : demander \"en tant qu'inspecteur\", puis \"en tant que parent d'élève\", peut faire émerger des angles utiles pour préparer une réunion.</p>\n      ",
+  "diagramKey": null
+}

@@ -1,0 +1,4 @@
+{
+  "key": "planToSlides",
+  "html": "\n    <div class=\"diagram-box\">\n      <h4>🖼️ Du plan de cours au diaporama</h4>\n      <div style=\"display:flex;align-items:center;gap:8px;flex-wrap:wrap;margin-top:10px;font-size:.82rem;\">\n        <div style=\"background:#fff;border:1px solid var(--rule);border-radius:8px;padding:10px 12px;\">📋 Plan de cours (3 parties)</div>\n        <div style=\"color:var(--ink-soft);\">→</div>\n        <div style=\"background:#fdf1de;border:1.5px solid #ecd9b6;border-radius:8px;padding:10px 12px;\">🤖 Trame générée par l'IA</div>\n        <div style=\"color:var(--ink-soft);\">→</div>\n        <div style=\"background:#e2f1e6;border:1.5px solid #c2dfc9;border-radius:8px;padding:10px 12px;\">🎨 Mise en forme visuelle</div>\n        <div style=\"color:var(--ink-soft);\">→</div>\n        <div style=\"background:#0f6e64;color:#fff;border-radius:8px;padding:10px 12px;\">📽️ Diaporama prêt</div>\n      </div>\n    </div>"
+}

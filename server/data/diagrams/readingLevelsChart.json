@@ -1,0 +1,4 @@
+{
+  "key": "readingLevelsChart",
+  "html": "\n    <div class=\"diagram-box\">\n      <h4>📚 Adapter le niveau de lecture</h4>\n      <div class=\"chart-wrap\"><canvas id=\"chart-readinglevels\"></canvas></div>\n      <p style=\"font-size:.78rem;color:var(--ink-soft);margin-top:8px;\">Le même contenu, réécrit avec une complexité de vocabulaire croissante selon le niveau visé.</p>\n    </div>\n    <script>\n    (function(){\n      var ctx = document.getElementById('chart-readinglevels');\n      if(!ctx) return;\n      new Chart(ctx, {\n        type:'bar',\n        data:{\n          labels:['CE2','6e','3e','Lycée'],\n          datasets:[{label:'Complexité du vocabulaire (indicative)', data:[20,45,70,90], backgroundColor:'#0f6e64'}]\n        },\n        options:{indexAxis:'y',responsive:true,maintainAspectRatio:false,plugins:{legend:{display:false}},scales:{x:{max:100,display:false},y:{grid:{display:false}}}}\n      });\n    })();\n    </script>"
+}

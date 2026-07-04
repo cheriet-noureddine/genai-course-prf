@@ -1,0 +1,12 @@
+{
+  "mi": 6,
+  "li": 5,
+  "moduleTitle": "Prompt Engineering at Scale",
+  "moduleNum": "07",
+  "moduleLevel": "Advanced",
+  "partLabel": "Part 4 — Mastery",
+  "title": "Building your personal AI toolkit and learning roadmap",
+  "time": "20 min",
+  "body": "\n        <p>To keep growing past this course, a few ongoing habits matter:</p>\n        <ul>\n          <li><strong>Pick a primary tool</strong> you use regularly enough to build real fluency, rather than constantly switching.</li>\n          <li><strong>Keep growing your prompt library</strong> — every genuinely useful prompt you write is worth saving.</li>\n          <li><strong>Practice on real tasks</strong>, not hypothetical ones — the skill sharpens fastest when the output actually matters to you.</li>\n          <li><strong>Stay current deliberately</strong> — this field moves fast; periodically check in on new model releases and techniques.</li>\n          <li><strong>Review your own failures</strong> — when a prompt doesn't work, diagnose why (vague? wrong format? missing context?) rather than just trying again randomly.</li>\n        </ul>\n        <div class=\"callout\">💡 The single best way to keep improving is consistent, real-world use — treat every interaction with an AI tool as a small chance to notice what worked and what didn't.</div>\n      ",
+  "diagramKey": null
+}

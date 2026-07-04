@@ -1,0 +1,9 @@
+{
+  "mi": 1,
+  "li": 3,
+  "moduleTitle": "Bien formuler ses prompts",
+  "title": "Erreurs courantes à éviter",
+  "time": "15 min",
+  "body": "\n        <p>Certaines erreurs reviennent souvent chez les débutants et limitent la qualité des réponses obtenues.</p>\n        <div class=\"compare\">\n          <div class=\"card bad\"><span class=\"tag\">À éviter</span>Demander plusieurs choses différentes dans un seul prompt confus.</div>\n          <div class=\"card good\"><span class=\"tag\">Préférable</span>Décomposer en plusieurs demandes claires, une à la fois.</div>\n        </div>\n        <p>Autres pièges fréquents : oublier de préciser le niveau des élèves, ne jamais relire ce qui est généré, ou faire une confiance aveugle à un contenu chiffré (dates, statistiques) sans le vérifier.</p>\n        <div class=\"callout\">💡 En cas de doute sur une information factuelle donnée par l'IA, vérifiez-la avant de la transmettre aux élèves.</div>\n      ",
+  "diagramKey": null
+}

@@ -1,0 +1,9 @@
+{
+  "mi": 0,
+  "li": 2,
+  "moduleTitle": "Prendre ses marques avec l'IA",
+  "title": "Premiers prompts : accroche de cours, email aux parents, grille d'évaluation",
+  "time": "25 min",
+  "body": "\n        <p>Un « prompt » est simplement l'instruction que vous donnez à l'IA. Plus elle est précise, meilleure sera la réponse. Voici trois usages de départ très concrets pour un enseignant.</p>\n        <div class=\"example\">\n          <span class=\"ex-label\">Exemple — Accroche de cours</span>\n          <pre>Propose-moi une accroche de 3 phrases pour démarrer un cours\nde 5e sur le cycle de l'eau. Ton curieux, avec une question\nqui donne envie de participer.</pre>\n        </div>\n        <div class=\"example\">\n          <span class=\"ex-label\">Exemple — Email aux parents</span>\n          <pre>Rédige un email court et bienveillant aux parents d'une classe\nde CM1 pour annoncer une sortie scolaire au musée le 14 mars.\nTon chaleureux mais professionnel.</pre>\n        </div>\n        <p>Pour une grille d'évaluation, précisez la compétence évaluée, le nombre de niveaux (par exemple 4 niveaux de maîtrise) et le format souhaité (tableau).</p>\n      ",
+  "diagramKey": null
+}

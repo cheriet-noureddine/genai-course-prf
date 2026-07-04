@@ -1,0 +1,12 @@
+{
+  "mi": 4,
+  "li": 5,
+  "moduleTitle": "System Prompts & Model Behavior",
+  "moduleNum": "05",
+  "moduleLevel": "Intermediate",
+  "partLabel": "Part 3 — Going Deeper",
+  "title": "Lab: build a custom AI assistant with a full system prompt",
+  "time": "15 min",
+  "body": "\n        <div class=\"exercise\">\n          <div class=\"ex-head\">🛠 Lab exercise</div>\n          <p>Design a complete system prompt for an AI assistant of your choosing (a study buddy, a recipe helper, a travel planning assistant — anything). Your system prompt should include all four elements:</p>\n          <ol>\n            <li>A clear persona (name, personality, expertise).</li>\n            <li>Scope — what it helps with, and what it should decline or redirect.</li>\n            <li>At least 3 specific rules or guardrails.</li>\n            <li>A default response format/length.</li>\n          </ol>\n          <p>If you have access to a tool that lets you set a custom system prompt (many AI chat apps offer this under \"custom instructions\"), try it out and test whether the assistant follows your rules across a few different requests.</p>\n        </div>\n      ",
+  "diagramKey": null
+}

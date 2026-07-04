@@ -1,0 +1,9 @@
+{
+  "mi": 2,
+  "li": 3,
+  "moduleTitle": "Documents et contenus pédagogiques",
+  "title": "Rédiger des emails aux parents, notes de suivi, appréciations de bulletin",
+  "time": "20 min",
+  "body": "\n        <p>Ces écrits professionnels prennent du temps et gagnent à être préparés avec l'IA, puis personnalisés.</p>\n        <ul>\n          <li><strong>Emails aux parents</strong> — préciser le ton, l'objet et les informations clés à inclure.</li>\n          <li><strong>Notes de suivi</strong> — décrire les faits observés sans jugement, l'IA peut aider à structurer le propos.</li>\n          <li><strong>Appréciations de bulletin</strong> — donner les points forts et axes de progrès observés, l'IA rédige une formulation professionnelle et bienveillante.</li>\n        </ul>\n        <div class=\"callout\">💡 Ne transmettez jamais de données identifiantes précises (nom complet, adresse) dans le prompt : rédigez d'abord de façon générique, puis personnalisez vous-même le document final.</div>\n      ",
+  "diagramKey": null
+}

@@ -1,0 +1,60 @@
+{
+  "title": "Quiz 2 — Bien formuler ses prompts",
+  "questions": [
+    {
+      "q": "Quels sont les trois piliers d'un bon prompt présentés dans ce module ?",
+      "opts": [
+        "Longueur, couleur, ponctuation",
+        "Public, format, contraintes",
+        "Vitesse, prix, langue",
+        "Titre, auteur, date"
+      ],
+      "correct": 1,
+      "explain": "Un bon prompt précise le public visé, le format attendu et les contraintes à respecter."
+    },
+    {
+      "q": "Pourquoi donner un rôle à l'IA est-il efficace ?",
+      "opts": [
+        "Cela accélère la génération du texte",
+        "Cela oriente instantanément vocabulaire, ton et niveau d'expertise",
+        "Cela réduit le prix de l'abonnement",
+        "Cela empêche toute erreur de l'IA"
+      ],
+      "correct": 1,
+      "explain": "Un rôle bien choisi bundle en une seule instruction le ton, le vocabulaire et le niveau d'expertise attendus."
+    },
+    {
+      "q": "Pour obtenir un QCM utilisable directement, il faut notamment préciser :",
+      "opts": [
+        "Le nombre de questions et de propositions par question",
+        "La couleur du texte",
+        "Le nom de l'école",
+        "La taille de la police"
+      ],
+      "correct": 0,
+      "explain": "Préciser le nombre de questions et de propositions garantit une structure exploitable telle quelle."
+    },
+    {
+      "q": "Quelle est une erreur courante à éviter dans un prompt ?",
+      "opts": [
+        "Préciser le niveau de la classe",
+        "Mélanger plusieurs demandes différentes dans un seul prompt confus",
+        "Demander un format précis",
+        "Donner un exemple attendu"
+      ],
+      "correct": 1,
+      "explain": "Mélanger plusieurs demandes dans un prompt confus nuit à la clarté et à la qualité de la réponse."
+    },
+    {
+      "q": "Le « test du collègue remplaçant » sert à vérifier que :",
+      "opts": [
+        "Le prompt est assez court",
+        "Le prompt contient assez de contexte pour être compris sans connaître la classe",
+        "Le prompt est écrit en anglais",
+        "Le prompt contient une blague"
+      ],
+      "correct": 1,
+      "explain": "Si un collègue sans contexte comprendrait exactement ce qui est demandé, l'IA le comprendra aussi."
+    }
+  ]
+}

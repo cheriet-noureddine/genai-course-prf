@@ -1,0 +1,12 @@
+{
+  "mi": 5,
+  "li": 5,
+  "moduleTitle": "Integrating AI Into Your Workflow",
+  "moduleNum": "06",
+  "moduleLevel": "Intermediate",
+  "partLabel": "Part 3 — Going Deeper",
+  "title": "Lab: automate a personal task using a no-code AI workflow",
+  "time": "15 min",
+  "body": "\n        <div class=\"exercise\">\n          <div class=\"ex-head\">🛠 Lab exercise</div>\n          <p>Design (on paper, or actually build if you have access to a no-code platform) a simple AI-powered automation for a real task in your own life. Sketch out:</p>\n          <ol>\n            <li><strong>The trigger</strong> — what starts the workflow (a new email, a form submission, a scheduled time).</li>\n            <li><strong>The AI step</strong> — what you want the AI to do with the content (summarize, classify, draft a reply, extract data).</li>\n            <li><strong>The action</strong> — what happens with the AI's output (send a notification, save to a spreadsheet, post to a channel).</li>\n          </ol>\n        </div>\n      ",
+  "diagramKey": null
+}

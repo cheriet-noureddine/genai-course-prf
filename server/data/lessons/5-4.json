@@ -1,0 +1,12 @@
+{
+  "mi": 5,
+  "li": 4,
+  "moduleTitle": "Integrating AI Into Your Workflow",
+  "moduleNum": "06",
+  "moduleLevel": "Intermediate",
+  "partLabel": "Part 3 — Going Deeper",
+  "title": "Prompt libraries: storing, versioning, and sharing your best prompts",
+  "time": "15 min",
+  "body": "\n        <p>Once you've crafted a prompt that reliably produces great results for a recurring task, it's worth saving it rather than reinventing it each time. Good practice for a prompt library:</p>\n        <ul>\n          <li><strong>Organize by task type</strong> (writing, coding, analysis, customer communication).</li>\n          <li><strong>Version your prompts</strong> as you improve them.</li>\n          <li><strong>Note the context</strong> each prompt was designed for.</li>\n          <li><strong>Share within a team</strong> so good prompting techniques compound across multiple people.</li>\n        </ul>\n        <p>This habit turns one-off prompting wins into a reusable, growing asset.</p>\n      ",
+  "diagramKey": null
+}

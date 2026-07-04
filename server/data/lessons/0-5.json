@@ -1,0 +1,12 @@
+{
+  "mi": 0,
+  "li": 5,
+  "moduleTitle": "What Is Generative AI?",
+  "moduleNum": "01",
+  "moduleLevel": "Beginner",
+  "partLabel": "Part 1 — Foundations",
+  "title": "Hands-on: Your first conversation with an AI assistant",
+  "time": "10 min",
+  "body": "\n        <div class=\"exercise\">\n          <div class=\"ex-head\">🛠 Hands-on exercise</div>\n          <p>Open any AI chat assistant and try three things:</p>\n          <ol>\n            <li>Ask it to explain a concept you already understand well. Notice how it structures the explanation.</li>\n            <li>Ask the exact same question twice. Compare the two answers — what stays the same and what varies?</li>\n            <li>Ask something slightly unusual (\"give me 5 unusual uses for a paperclip\") and see how it handles open-ended creative tasks.</li>\n          </ol>\n          <p>Pay attention to tone, structure, and confidence. You'll build on these first impressions throughout the course.</p>\n        </div>\n      ",
+  "diagramKey": null
+}

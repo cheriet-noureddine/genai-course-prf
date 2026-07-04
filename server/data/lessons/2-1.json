@@ -1,0 +1,9 @@
+{
+  "mi": 2,
+  "li": 1,
+  "moduleTitle": "Documents et contenus pédagogiques",
+  "title": "Adapter un texte à différents niveaux de lecture",
+  "time": "20 min",
+  "body": "\n        <p>Un même contenu peut être reformulé pour convenir à des niveaux de lecture très différents, sans perdre le sens.</p>\n        <div class=\"compare\">\n          <div class=\"card bad\"><span class=\"tag\">Sans consigne de niveau</span>\"Reformule ce texte plus simplement.\"</div>\n          <div class=\"card good\"><span class=\"tag\">Avec consigne de niveau</span>\"Réécris ce texte pour un élève de CE2, avec des phrases courtes et un vocabulaire simple, sans perdre l'idée principale.\"</div>\n        </div>\n        <p>Cette technique est particulièrement utile pour la différenciation pédagogique : générer 2 ou 3 versions d'un même document adaptées à des groupes de niveaux différents.</p>\n      ",
+  "diagramKey": "readingLevelsChart"
+}

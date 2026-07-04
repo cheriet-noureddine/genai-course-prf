@@ -1,0 +1,12 @@
+{
+  "mi": 1,
+  "li": 6,
+  "moduleTitle": "Prompt Engineering Basics",
+  "moduleNum": "02",
+  "moduleLevel": "Beginner",
+  "partLabel": "Part 1 — Foundations",
+  "title": "Lab: rewrite 3 weak prompts into strong ones",
+  "time": "15 min",
+  "body": "\n        <div class=\"exercise\">\n          <div class=\"ex-head\">🛠 Lab exercise</div>\n          <p>Rewrite each weak prompt below into a strong, specific version using everything from this module (task, context, constraints, format, persona as needed):</p>\n          <ol>\n            <li><strong>Weak:</strong> \"Tell me about leadership.\"</li>\n            <li><strong>Weak:</strong> \"Fix this code.\" (imagine you have code with a bug)</li>\n            <li><strong>Weak:</strong> \"Write an email.\" </li>\n          </ol>\n          <p>For each rewrite, identify which elements you added (task, context, constraint, format, persona) and why. Run the improved version in an AI assistant and note whether the output quality improved.</p>\n        </div>\n      ",
+  "diagramKey": null
+}

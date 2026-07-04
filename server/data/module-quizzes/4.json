@@ -1,0 +1,49 @@
+{
+  "title": "Quiz 5 — Créer des sites web simples",
+  "questions": [
+    {
+      "q": "Pour créer un site de classe sans coder, l'IA peut principalement vous aider à :",
+      "opts": [
+        "Générer la structure, les textes et l'organisation des pages",
+        "Configurer le serveur informatique de l'école",
+        "Remplacer l'administration de l'établissement",
+        "Installer un logiciel antivirus"
+      ],
+      "correct": 0,
+      "explain": "L'IA peut générer la structure, les textes et l'organisation d'un site simple, sans intervention technique complexe."
+    },
+    {
+      "q": "Quel est l'avantage principal d'une fiche de révision interactive par rapport à une fiche papier ?",
+      "opts": [
+        "Elle coûte plus cher",
+        "Elle donne un retour immédiat aux élèves qui s'auto-évaluent",
+        "Elle ne peut pas être corrigée",
+        "Elle remplace le professeur"
+      ],
+      "correct": 1,
+      "explain": "L'interactivité permet un retour immédiat, ce qu'une fiche papier statique ne peut pas offrir seule."
+    },
+    {
+      "q": "Avant de proposer un quiz interactif aux élèves, il est indispensable de :",
+      "opts": [
+        "Le tester soi-même pour vérifier son exactitude",
+        "Le partager sans le relire",
+        "Le traduire en 5 langues",
+        "Le transformer en PDF uniquement"
+      ],
+      "correct": 0,
+      "explain": "Tester l'outil avant diffusion permet de repérer d'éventuelles erreurs de contenu ou de correction."
+    },
+    {
+      "q": "Dans l'atelier de la page de classe, que faut-il inclure au minimum ?",
+      "opts": [
+        "Une présentation, le syllabus et des liens ressources",
+        "Uniquement une photo",
+        "Les notes de tous les élèves",
+        "Un jeu vidéo"
+      ],
+      "correct": 0,
+      "explain": "Une présentation courte, le syllabus et des liens ressources forment la base attendue de la page de classe."
+    }
+  ]
+}

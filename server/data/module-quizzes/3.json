@@ -1,0 +1,60 @@
+{
+  "title": "Quiz 4 — Créer des supports visuels et diaporamas",
+  "questions": [
+    {
+      "q": "Pour transformer un plan de cours en diaporama, quel élément faut-il préciser ?",
+      "opts": [
+        "Le nombre de diapositives et la structure du plan",
+        "La marque de l'ordinateur",
+        "Le nom de l'inspecteur",
+        "Rien, l'IA devine tout seule"
+      ],
+      "correct": 0,
+      "explain": "Indiquer le nombre de diapositives et la structure permet à l'IA de répartir le contenu de façon cohérente."
+    },
+    {
+      "q": "À quoi servent les notes de présentateur générées par l'IA ?",
+      "opts": [
+        "À être lues par les élèves sur l'écran",
+        "À guider l'enseignant à l'oral pendant la présentation",
+        "À remplacer le diaporama entier",
+        "À servir de corrigé d'exercice"
+      ],
+      "correct": 1,
+      "explain": "Les notes de présentateur sont un support oral pour l'enseignant, distinct du contenu affiché."
+    },
+    {
+      "q": "Pour générer une image utile en classe, il vaut mieux :",
+      "opts": [
+        "Donner une description vague et laisser l'IA improviser",
+        "Donner une description précise incluant le public visé et le style souhaité",
+        "Ne jamais préciser de style",
+        "Demander uniquement du texte"
+      ],
+      "correct": 1,
+      "explain": "Une description précise (contenu, style, public) donne un résultat bien plus exploitable qu'une description vague."
+    },
+    {
+      "q": "Avant d'utiliser un schéma généré par l'IA en classe, il faut :",
+      "opts": [
+        "Le publier directement",
+        "Vérifier son exactitude scientifique ou factuelle",
+        "Le supprimer systématiquement",
+        "Le transformer en audio"
+      ],
+      "correct": 1,
+      "explain": "Les schémas générés doivent être vérifiés, car l'IA peut produire des erreurs de proportions ou de faits."
+    },
+    {
+      "q": "Dans l'atelier du diaporama de 6 diapositives, quelle est la première étape ?",
+      "opts": [
+        "Choisir la police d'écriture",
+        "Lister les 6 grandes idées à couvrir",
+        "Imprimer le diaporama",
+        "Envoyer un email aux parents"
+      ],
+      "correct": 1,
+      "explain": "Clarifier les 6 idées clés est la première étape avant de générer le contenu détaillé de chaque diapositive."
+    }
+  ]
+}

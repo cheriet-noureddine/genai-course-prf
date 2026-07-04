@@ -1,0 +1,12 @@
+{
+  "mi": 1,
+  "li": 5,
+  "moduleTitle": "Prompt Engineering Basics",
+  "moduleNum": "02",
+  "moduleLevel": "Beginner",
+  "partLabel": "Part 1 — Foundations",
+  "title": "Negative constraints: telling AI what NOT to do",
+  "time": "15 min",
+  "body": "\n        <p>Just as important as telling the model what you want is telling it what to avoid. <strong>Negative constraints</strong> are explicit \"don't do X\" instructions that rule out unwanted behaviors before they appear.</p>\n        <div class=\"compare\">\n          <div class=\"card bad\"><span class=\"tag\">Without negative constraint</span>\"Write a summary of this article.\"<br><br>Result: Often includes verbose intros, repeated context, and filler phrases.</div>\n          <div class=\"card good\"><span class=\"tag\">With negative constraint</span>\"Summarize this article in 3 sentences. Do not include filler phrases like 'In this article...' or 'The author explains...'\"</div>\n        </div>\n        <p>Common negative constraints worth keeping ready: \"no jargon,\" \"do not use passive voice,\" \"don't repeat the question,\" \"no bullet points,\" \"no disclaimers.\"</p>\n      ",
+  "diagramKey": null
+}

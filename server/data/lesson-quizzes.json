@@ -1,0 +1,321 @@
+{
+  "0-0": {
+    "q": "Qu'est-ce qu'un chatbot IA, en une phrase simple ?",
+    "opts": [
+      "Un moteur de recherche qui indexe des sites web",
+      "Un programme qui génère du texte en prédisant la suite la plus probable, mot après mot",
+      "Un logiciel qui corrige automatiquement l'orthographe",
+      "Une base de données figée de réponses toutes faites"
+    ],
+    "correct": 1,
+    "explain": "Un chatbot IA ne « cherche » pas une réponse existante : il génère une réponse nouvelle, token par token, à partir de ce qu'il a appris."
+  },
+  "0-1": {
+    "q": "Que devez-vous éviter de coller dans un chatbot grand public ?",
+    "opts": [
+      "Le titre d'une leçon",
+      "Le nom, la note ou des informations identifiables d'un élève",
+      "Un extrait de programme officiel",
+      "Une consigne d'exercice générique"
+    ],
+    "correct": 1,
+    "explain": "Les données personnelles d'élèves (nom, note, situation familiale...) ne doivent pas être transmises à un outil grand public sans autorisation de l'établissement."
+  },
+  "0-2": {
+    "q": "Pour obtenir une bonne accroche de cours, il est surtout utile de préciser :",
+    "opts": [
+      "Le nombre de mots exact et rien d'autre",
+      "Le niveau des élèves et l'objectif de la séance",
+      "Le nom de l'enseignant",
+      "La couleur du tableau"
+    ],
+    "correct": 1,
+    "explain": "Préciser le public (niveau) et l'objectif pédagogique permet à l'IA de calibrer le ton et le contenu de l'accroche."
+  },
+  "0-3": {
+    "q": "Parmi ces outils, lequel est développé par Anthropic ?",
+    "opts": [
+      "Gemini",
+      "Copilot",
+      "Claude",
+      "ChatGPT"
+    ],
+    "correct": 2,
+    "explain": "Claude est l'assistant IA développé par Anthropic."
+  },
+  "0-4": {
+    "q": "Lors de votre première conversation avec une IA, que devez-vous surtout observer ?",
+    "opts": [
+      "La vitesse d'affichage du texte",
+      "Le ton, la structure et la fiabilité de la réponse",
+      "La couleur de l'interface",
+      "Le nombre de fenêtres ouvertes"
+    ],
+    "correct": 1,
+    "explain": "Ce sont le ton, la structure et la fiabilité de la réponse qui vous permettront de juger si l'outil convient à votre usage pédagogique."
+  },
+  "1-0": {
+    "q": "Parmi ces éléments, lequel ne fait PAS partie de l'anatomie d'un bon prompt ?",
+    "opts": [
+      "Le public visé",
+      "Le format attendu",
+      "Les contraintes à respecter",
+      "La marque de l'ordinateur utilisé"
+    ],
+    "correct": 3,
+    "explain": "Public, format et contraintes structurent un bon prompt. Le matériel utilisé n'a aucune influence sur la qualité de la réponse."
+  },
+  "1-1": {
+    "q": "Que signifie donner un rôle à l'IA, comme \"agis comme un spécialiste de la lecture en CM2\" ?",
+    "opts": [
+      "Changer le prix de l'abonnement",
+      "Orienter le vocabulaire et le niveau de la réponse vers ce rôle précis",
+      "Forcer l'IA à répondre uniquement par oui ou non",
+      "Bloquer l'accès à certains sujets"
+    ],
+    "correct": 1,
+    "explain": "Donner un rôle oriente instantanément le ton, le vocabulaire et le niveau d'expertise de la réponse vers ce profil."
+  },
+  "1-2": {
+    "q": "Pour obtenir un tableau plutôt qu'un texte continu, que faut-il faire ?",
+    "opts": [
+      "Rien, l'IA choisit toujours le meilleur format",
+      "Le préciser explicitement dans le prompt, avec les colonnes souhaitées",
+      "Poser la question deux fois",
+      "Utiliser uniquement des majuscules"
+    ],
+    "correct": 1,
+    "explain": "Le format de sortie (tableau, liste, QCM...) doit être demandé explicitement pour être garanti."
+  },
+  "1-3": {
+    "q": "Quelle est l'erreur la plus courante dans un prompt mal formulé ?",
+    "opts": [
+      "Il est trop poli",
+      "Il est trop vague et laisse l'IA deviner ce qui est attendu",
+      "Il contient trop d'exemples",
+      "Il est écrit en français"
+    ],
+    "correct": 1,
+    "explain": "Un prompt vague force l'IA à combler les manques par des suppositions, souvent éloignées de ce que l'enseignant souhaitait."
+  },
+  "1-4": {
+    "q": "Dans l'atelier de reformulation de prompts, l'objectif principal est de :",
+    "opts": [
+      "Rendre les prompts plus courts à tout prix",
+      "Ajouter public, format et contraintes à une demande vague",
+      "Traduire les prompts en anglais",
+      "Supprimer toute question de l'énoncé"
+    ],
+    "correct": 1,
+    "explain": "L'atelier vise à transformer une demande vague en prompt précis en ajoutant les éléments manquants : public, format, contraintes."
+  },
+  "2-0": {
+    "q": "Pour résumer un travail d'élève avec l'IA, il est conseillé de :",
+    "opts": [
+      "Ne jamais donner de consigne particulière",
+      "Préciser la longueur souhaitée et ce que le résumé doit mettre en avant",
+      "Envoyer le nom complet de l'élève dans le prompt",
+      "Demander uniquement un résumé en anglais"
+    ],
+    "correct": 1,
+    "explain": "Préciser la longueur et l'angle du résumé permet d'obtenir un résultat directement exploitable, sans transmettre de données identifiantes."
+  },
+  "2-1": {
+    "q": "Adapter un texte à différents niveaux de lecture signifie :",
+    "opts": [
+      "Traduire le texte dans une autre langue",
+      "Réécrire le même contenu avec un vocabulaire et des phrases adaptés au niveau visé",
+      "Raccourcir systématiquement le texte de moitié",
+      "Supprimer les exemples du texte"
+    ],
+    "correct": 1,
+    "explain": "Adapter un texte, c'est conserver le sens mais ajuster la complexité du vocabulaire et des phrases au niveau de lecture visé."
+  },
+  "2-2": {
+    "q": "Quand vous demandez un corrigé de quiz à une IA, que devez-vous systématiquement faire ensuite ?",
+    "opts": [
+      "Le publier tel quel sans le relire",
+      "Le relire et vérifier son exactitude avant de le diffuser",
+      "Le supprimer aussitôt",
+      "Le transformer en diaporama uniquement"
+    ],
+    "correct": 1,
+    "explain": "L'IA peut se tromper (hallucinations) : tout corrigé généré doit être relu et validé par l'enseignant avant diffusion."
+  },
+  "2-3": {
+    "q": "Pour rédiger un email aux parents avec l'IA, quel élément est le plus important à préciser ?",
+    "opts": [
+      "Le ton souhaité (formel, bienveillant...) et l'objet du message",
+      "La police d'écriture à utiliser",
+      "Le nombre d'emojis à inclure",
+      "La couleur du fond de l'email"
+    ],
+    "correct": 0,
+    "explain": "Le ton et l'objet précis du message permettent d'obtenir un email directement utilisable, adapté au contexte de communication avec les familles."
+  },
+  "2-4": {
+    "q": "Dans l'atelier « résumer un long PDF », quel est le livrable final ?",
+    "opts": [
+      "Un diaporama de 20 diapositives",
+      "Une fiche d'une page destinée aux élèves",
+      "Un tableau Excel",
+      "Une vidéo de présentation"
+    ],
+    "correct": 1,
+    "explain": "L'atelier vise à condenser un long document en une fiche synthétique d'une page, facilement distribuable aux élèves."
+  },
+  "3-0": {
+    "q": "Pour transformer un plan de cours en diaporama avec l'IA, il est utile de préciser :",
+    "opts": [
+      "Le nombre de diapositives souhaité et les grandes parties du plan",
+      "Uniquement la couleur de fond",
+      "Le nom de l'établissement scolaire",
+      "Rien, l'IA devine automatiquement le plan"
+    ],
+    "correct": 0,
+    "explain": "Indiquer le nombre de diapositives et la structure du plan permet à l'IA de répartir le contenu de façon cohérente."
+  },
+  "3-1": {
+    "q": "Les notes de présentateur générées par l'IA servent à :",
+    "opts": [
+      "Remplacer entièrement le diaporama",
+      "Guider l'enseignant à l'oral pendant la présentation",
+      "Être lues telles quelles par les élèves",
+      "Remplacer la fiche d'exercices"
+    ],
+    "correct": 1,
+    "explain": "Les notes de présentateur sont un support oral pour l'enseignant, distinct du contenu affiché aux élèves."
+  },
+  "3-2": {
+    "q": "Pourquoi générer des images ou schémas pour les apprenants visuels ?",
+    "opts": [
+      "Pour remplacer tout texte explicatif",
+      "Pour renforcer la compréhension grâce à une représentation visuelle du concept",
+      "Pour allonger artificiellement le diaporama",
+      "Pour éviter de préparer le cours"
+    ],
+    "correct": 1,
+    "explain": "Les schémas et images aident les élèves à mémoriser et comprendre des concepts abstraits en les visualisant."
+  },
+  "3-3": {
+    "q": "Dans l'atelier « diaporama de 6 diapositives », quelle est la première étape ?",
+    "opts": [
+      "Choisir directement les couleurs du thème",
+      "Définir le thème et les 6 grandes idées à couvrir",
+      "Imprimer le diaporama",
+      "Contacter les parents d'élèves"
+    ],
+    "correct": 1,
+    "explain": "Avant de générer visuellement le diaporama, il faut clarifier le thème et les idées clés à répartir sur les 6 diapositives."
+  },
+  "4-0": {
+    "q": "Pour créer un site de classe sans coder, l'IA peut vous aider à :",
+    "opts": [
+      "Écrire uniquement du code informatique complexe",
+      "Générer la structure, les textes et l'organisation des pages",
+      "Remplacer entièrement l'hébergeur du site",
+      "Configurer le réseau de l'établissement"
+    ],
+    "correct": 1,
+    "explain": "L'IA peut générer la structure, les textes et l'organisation d'un site simple, sans que l'enseignant ait besoin de coder."
+  },
+  "4-1": {
+    "q": "Une fiche de révision interactive en page web permet notamment de :",
+    "opts": [
+      "Remplacer le tableau de la classe",
+      "Proposer aux élèves un auto-contrôle de leurs connaissances en autonomie",
+      "Envoyer automatiquement les notes aux parents",
+      "Bloquer l'accès à l'établissement"
+    ],
+    "correct": 1,
+    "explain": "Une fiche interactive permet aux élèves de vérifier eux-mêmes leur compréhension, en autonomie et à leur rythme."
+  },
+  "4-2": {
+    "q": "Dans l'atelier « page de classe », quels éléments doivent au minimum apparaître ?",
+    "opts": [
+      "Uniquement une photo de l'enseignant",
+      "Le syllabus et des liens vers des ressources",
+      "Un jeu vidéo intégré",
+      "La liste des mots de passe des élèves"
+    ],
+    "correct": 1,
+    "explain": "La page de classe doit présenter le syllabus et donner accès aux ressources utiles, de façon claire et organisée."
+  },
+  "5-0": {
+    "q": "Un \"prompt fiche de prep\" réutilisable sert à :",
+    "opts": [
+      "Générer une seule fois un contenu jetable",
+      "Gagner du temps en réutilisant une structure de prompt éprouvée pour chaque nouvelle préparation",
+      "Remplacer le programme officiel",
+      "Supprimer le besoin de préparer les cours"
+    ],
+    "correct": 1,
+    "explain": "Un prompt réutilisable capitalise sur une structure qui fonctionne, pour gagner du temps à chaque nouvelle préparation."
+  },
+  "5-1": {
+    "q": "Quel garde-fou est essentiel lorsqu'on utilise l'IA pour la correction ?",
+    "opts": [
+      "Faire confiance aveuglément à la note proposée par l'IA",
+      "Toujours relire et valider la correction avant de la communiquer aux élèves",
+      "Ne jamais corriger soi-même",
+      "Donner tous les noms d'élèves à l'IA"
+    ],
+    "correct": 1,
+    "explain": "L'IA peut se tromper ou manquer de contexte : l'enseignant reste responsable de la validation finale de toute correction."
+  },
+  "5-2": {
+    "q": "Concernant l'intégrité académique, quelle affirmation est correcte ?",
+    "opts": [
+      "Les élèves n'ont pas besoin d'apprendre à utiliser l'IA correctement",
+      "Il est utile d'expliquer aux élèves un usage responsable et transparent de l'IA",
+      "L'IA doit être totalement interdite dans tous les cas",
+      "Utiliser l'IA revient toujours à tricher"
+    ],
+    "correct": 1,
+    "explain": "Accompagner les élèves vers un usage responsable et transparent de l'IA fait partie du rôle pédagogique de l'enseignant."
+  },
+  "5-3": {
+    "q": "Que doit contenir une \"boîte à outils IA\" personnelle ?",
+    "opts": [
+      "Uniquement un mot de passe",
+      "Une sélection de prompts, d'outils et de bonnes pratiques que l'on réutilise",
+      "La liste de tous les élèves de l'établissement",
+      "Un unique lien vers un moteur de recherche"
+    ],
+    "correct": 1,
+    "explain": "La boîte à outils rassemble les prompts, outils et pratiques qui fonctionnent bien pour l'enseignant, prêts à être réutilisés."
+  },
+  "6-0": {
+    "q": "Personnaliser un assistant IA pour sa matière consiste à :",
+    "opts": [
+      "Changer la langue de l'interface uniquement",
+      "Définir un rôle, un ton et des règles adaptés à sa discipline et son niveau d'enseignement",
+      "Désinstaller l'application",
+      "Partager son mot de passe avec les élèves"
+    ],
+    "correct": 1,
+    "explain": "Personnaliser un assistant, c'est lui donner un rôle, un ton et des règles clairement adaptés à sa matière et à son public."
+  },
+  "6-1": {
+    "q": "L'usage multimodal permet notamment de :",
+    "opts": [
+      "Envoyer une image d'un travail d'élève ou une note manuscrite pour analyse",
+      "Utiliser l'IA uniquement pour le texte",
+      "Empêcher toute utilisation d'images",
+      "Remplacer entièrement l'évaluation orale"
+    ],
+    "correct": 0,
+    "explain": "Le multimodal permet à l'IA d'analyser des images (travaux, notes manuscrites) en plus du texte."
+  },
+  "6-2": {
+    "q": "Pour construire une habitude durable avec l'IA, il est recommandé de :",
+    "opts": [
+      "Changer d'outil chaque semaine sans raison",
+      "Pratiquer régulièrement sur de vraies tâches et ajuster ses prompts au fil du temps",
+      "Ne jamais réutiliser un prompt qui a fonctionné",
+      "Éviter de se tenir informé des évolutions"
+    ],
+    "correct": 1,
+    "explain": "La pratique régulière sur des tâches réelles, associée à l'ajustement progressif des prompts, construit une compétence durable."
+  }
+}

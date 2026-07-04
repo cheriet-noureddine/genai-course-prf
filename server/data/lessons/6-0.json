@@ -1,0 +1,9 @@
+{
+  "mi": 6,
+  "li": 0,
+  "moduleTitle": "Aller plus loin",
+  "title": "Personnaliser un assistant IA pour sa matière/son niveau",
+  "time": "20 min",
+  "body": "\n        <p>Certains outils IA permettent de définir des instructions permanentes (parfois appelées « instructions personnalisées » ou « projet ») qui s'appliquent à toutes vos conversations.</p>\n        <div class=\"example\">\n          <span class=\"ex-label\">Exemple d'instructions permanentes</span>\n          <pre>Je suis professeur de SVT en collège (niveaux 6e à 3e). Quand\nje te demande une fiche ou un exercice, adapte toujours le\nvocabulaire au niveau précisé, et ajoute systématiquement un\nexemple concret tiré de la vie quotidienne.</pre>\n        </div>\n        <div class=\"callout\">💡 Ces instructions vous évitent de répéter votre contexte (matière, niveaux) à chaque nouvelle conversation.</div>\n      ",
+  "diagramKey": null
+}

@@ -1,0 +1,9 @@
+{
+  "mi": 5,
+  "li": 3,
+  "moduleTitle": "Intégration dans le quotidien de classe",
+  "title": "Atelier : construire sa \"boîte à outils IA\" personnelle",
+  "time": "20 min",
+  "body": "\n        <div class=\"exercise\">\n          <div class=\"ex-head\">🛠 Atelier</div>\n          <p>Rassemblez dans un document personnel (fichier texte, note...) :</p>\n          <ol>\n            <li>3 prompts modèles que vous réutiliserez régulièrement (fiche de prep, email parents, quiz).</li>\n            <li>Les 1 ou 2 outils IA que vous préférez utiliser au quotidien.</li>\n            <li>Vos propres règles personnelles de vérification (ce que vous relisez toujours avant diffusion).</li>\n          </ol>\n          <p>Cette boîte à outils deviendra votre point de départ pour chaque nouvelle préparation.</p>\n        </div>\n      ",
+  "diagramKey": null
+}

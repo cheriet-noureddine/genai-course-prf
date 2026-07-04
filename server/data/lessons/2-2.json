@@ -1,0 +1,9 @@
+{
+  "mi": 2,
+  "li": 2,
+  "moduleTitle": "Documents et contenus pédagogiques",
+  "title": "Générer des quiz, fiches d'exercices et corrigés",
+  "time": "25 min",
+  "body": "\n        <p>L'IA peut produire rapidement un premier jet de quiz ou de fiche d'exercices, à condition de bien cadrer la demande.</p>\n        <div class=\"example\">\n          <span class=\"ex-label\">Exemple</span>\n          <pre>Crée une fiche d'exercices de conjugaison sur le passé composé,\nniveau 5e, 8 exercices à difficulté croissante, avec le corrigé\nsur une page séparée.</pre>\n        </div>\n        <div class=\"callout\">💡 Relisez toujours le corrigé généré : les erreurs de calcul ou de conjugaison, bien que rares, existent et peuvent induire les élèves en erreur.</div>\n      ",
+  "diagramKey": null
+}

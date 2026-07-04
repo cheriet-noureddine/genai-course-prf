@@ -1,0 +1,12 @@
+{
+  "mi": 6,
+  "li": 3,
+  "moduleTitle": "Prompt Engineering at Scale",
+  "moduleNum": "07",
+  "moduleLevel": "Advanced",
+  "partLabel": "Part 4 — Mastery",
+  "title": "Fine-tuning vs. prompting: when to use which approach",
+  "time": "20 min",
+  "body": "\n        <p><strong>Prompting</strong> changes a model's behavior temporarily, for a single request. <strong>Fine-tuning</strong> actually retrains the model on a custom dataset, permanently adjusting its internal parameters so new behavior becomes built-in.</p>\n        <p>General guidance: start with prompting (and prompt chaining, system prompts, few-shot examples) — it solves the vast majority of real needs. Only consider fine-tuning when you have a large, well-defined, repetitive task, real data to train on, and prompting alone consistently falls short.</p>\n      ",
+  "diagramKey": "promptVsFinetune"
+}

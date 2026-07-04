@@ -1,0 +1,12 @@
+{
+  "mi": 6,
+  "li": 6,
+  "moduleTitle": "Prompt Engineering at Scale",
+  "moduleNum": "07",
+  "moduleLevel": "Advanced",
+  "partLabel": "Part 4 — Mastery",
+  "title": "Course review and final project briefing",
+  "time": "15 min",
+  "body": "\n        <p>You've now covered the full arc of this program:</p>\n        <ul>\n          <li><strong>Part 1 — Foundations:</strong> what generative AI and LLMs are, and how to write clear, effective prompts.</li>\n          <li><strong>Part 2 — Core Techniques:</strong> advanced prompting strategies and applying AI across real-world tasks.</li>\n          <li><strong>Part 3 — Going Deeper:</strong> system prompts, model behavior, APIs, no-code tools, RAG, and agents.</li>\n          <li><strong>Part 4 — Mastery:</strong> evaluating and scaling prompts, multi-modal prompting, fine-tuning, and where the field is headed.</li>\n        </ul>\n        <p>The <strong>Final Project</strong> asks you to bring all of it together: design, build, and document your own custom AI assistant for a real domain you care about. Head to the Final Project section next for the full brief.</p>\n      ",
+  "diagramKey": null
+}

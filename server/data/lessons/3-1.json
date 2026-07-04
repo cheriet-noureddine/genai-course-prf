@@ -1,0 +1,9 @@
+{
+  "mi": 3,
+  "li": 1,
+  "moduleTitle": "Créer des supports visuels et diaporamas",
+  "title": "Rédiger des notes de présentateur et des questions de discussion",
+  "time": "20 min",
+  "body": "\n        <p>Les notes de présentateur sont un support oral pour vous — elles ne sont pas destinées à être lues par les élèves. L'IA peut les rédiger à partir du contenu de chaque diapositive.</p>\n        <ul>\n          <li><strong>Notes de présentateur</strong> — rappels, exemples supplémentaires, transitions entre les idées.</li>\n          <li><strong>Questions de discussion</strong> — questions ouvertes pour relancer la participation des élèves à des moments clés du cours.</li>\n        </ul>\n        <div class=\"example\">\n          <span class=\"ex-label\">Exemple</span>\n          <pre>Pour la diapositive \"Le cycle de l'eau\", propose-moi 2 questions\nde discussion à poser à la classe pour vérifier leur\ncompréhension avant de passer à la diapositive suivante.</pre>\n        </div>\n      ",
+  "diagramKey": null
+}

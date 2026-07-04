@@ -1,0 +1,9 @@
+{
+  "mi": 0,
+  "li": 0,
+  "moduleTitle": "Prendre ses marques avec l'IA",
+  "title": "Qu'est-ce qu'un chatbot IA, en langage simple",
+  "time": "20 min",
+  "body": "\n        <p>Un chatbot IA — comme ChatGPT, Claude ou Gemini — est un programme qui <strong>génère du texte</strong> en prédisant, mot après mot, la suite la plus probable à partir de ce que vous avez écrit. Il n'a pas de base de données de réponses toutes faites : il « invente » sa réponse à chaque fois, en s'appuyant sur des milliards d'exemples de textes qu'il a lus pendant son entraînement.</p>\n        <p>Concrètement, pour un enseignant, cela veut dire que l'outil peut rédiger, résumer, reformuler, corriger ou proposer des idées — mais qu'il peut aussi se tromper avec assurance. Il faut donc toujours relire ce qu'il produit.</p>\n        <div class=\"callout\">💡 <strong>À retenir :</strong> un chatbot IA n'est ni un moteur de recherche, ni une encyclopédie fiable à 100 %. C'est un assistant de rédaction et de réflexion, à toujours superviser.</div>\n      ",
+  "diagramKey": null
+}

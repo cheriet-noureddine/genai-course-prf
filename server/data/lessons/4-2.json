@@ -1,0 +1,9 @@
+{
+  "mi": 4,
+  "li": 2,
+  "moduleTitle": "Créer des sites web simples",
+  "title": "Atelier : générer une page de classe avec syllabus et liens ressources",
+  "time": "20 min",
+  "body": "\n        <div class=\"exercise\">\n          <div class=\"ex-head\">🛠 Atelier</div>\n          <p>Construisez la base d'une page de classe pour l'un de vos groupes.</p>\n          <ol>\n            <li>Rédigez une courte présentation de la classe (2-3 phrases).</li>\n            <li>Listez les grandes lignes du syllabus de l'année ou du trimestre.</li>\n            <li>Ajoutez 3 à 5 liens ou ressources utiles pour les élèves et les parents.</li>\n            <li>Demandez à l'IA d'assembler ces éléments dans une structure de page claire et bien organisée.</li>\n          </ol>\n        </div>\n      ",
+  "diagramKey": null
+}

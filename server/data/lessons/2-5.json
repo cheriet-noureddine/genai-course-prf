@@ -1,0 +1,12 @@
+{
+  "mi": 2,
+  "li": 5,
+  "moduleTitle": "Advanced Prompting Patterns",
+  "moduleNum": "03",
+  "moduleLevel": "Intermediate",
+  "partLabel": "Part 2 — Core Techniques",
+  "title": "Lab: build a decision-making prompt chain",
+  "time": "20 min",
+  "body": "\n        <div class=\"exercise\">\n          <div class=\"ex-head\">🛠 Lab exercise</div>\n          <p>Pick a real decision or problem you're currently facing. Design a 3-step prompt chain to work through it:</p>\n          <ol>\n            <li><strong>Step 1:</strong> Ask the model to list the key factors/criteria that matter for this decision.</li>\n            <li><strong>Step 2:</strong> Feed those factors back in and ask it to evaluate each option against them.</li>\n            <li><strong>Step 3:</strong> Ask for a final recommendation with reasoning, based only on Step 2's evaluation.</li>\n          </ol>\n          <p>Run all three steps if you have access to an AI assistant. Notice how much more grounded the final recommendation feels compared to just asking \"what should I do?\" in one shot.</p>\n        </div>\n      ",
+  "diagramKey": null
+}

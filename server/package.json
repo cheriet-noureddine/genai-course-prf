@@ -1,0 +1,16 @@
+{
+  "name": "genai-course-server",
+  "version": "1.0.0",
+  "description": "Backend API for the 'IA Générative pour Enseignants' course. Serves lesson content, quizzes and auth from server-side data instead of embedding everything in the client HTML.",
+  "main": "server.js",
+  "type": "commonjs",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node --watch server.js"
+  },
+  "dependencies": {
+    "cookie-parser": "^1.4.6",
+    "express": "^4.19.2",
+    "express-rate-limit": "^7.4.0"
+  }
+}

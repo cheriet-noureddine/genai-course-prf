@@ -1,0 +1,9 @@
+{
+  "mi": 2,
+  "li": 4,
+  "moduleTitle": "Documents et contenus pédagogiques",
+  "title": "Atelier : résumer un long PDF en une fiche d'une page pour les élèves",
+  "time": "15 min",
+  "body": "\n        <div class=\"exercise\">\n          <div class=\"ex-head\">🛠 Atelier</div>\n          <p>Choisissez un document long que vous utilisez régulièrement (article, chapitre, extrait de manuel).</p>\n          <ol>\n            <li>Copiez-en un extrait représentatif (sans données personnelles).</li>\n            <li>Demandez à l'IA une fiche d'une page : idée principale, 3 à 5 points clés, un exemple, et 2 questions de compréhension.</li>\n            <li>Précisez le niveau de vos élèves dans le prompt.</li>\n            <li>Relisez et ajustez la fiche avant de l'utiliser en classe.</li>\n          </ol>\n        </div>\n      ",
+  "diagramKey": null
+}

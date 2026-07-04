@@ -1,0 +1,9 @@
+{
+  "mi": 5,
+  "li": 1,
+  "moduleTitle": "Intégration dans le quotidien de classe",
+  "title": "Utiliser l'IA pour la correction et le feedback (avec garde-fous)",
+  "time": "25 min",
+  "body": "\n        <p>L'IA peut accélérer la correction en repérant des erreurs récurrentes ou en proposant un premier retour, mais elle ne doit jamais remplacer le jugement de l'enseignant.</p>\n        <div class=\"compare\">\n          <div class=\"card bad\"><span class=\"tag\">Usage risqué</span>Copier-coller la note proposée par l'IA sans relecture.</div>\n          <div class=\"card good\"><span class=\"tag\">Usage maîtrisé</span>Utiliser l'IA pour un premier repérage, puis valider et ajuster soi-même la note et le commentaire.</div>\n        </div>\n        <div class=\"callout\">💡 Gardez toujours la décision finale sur la note : l'IA est une aide au repérage, pas une autorité évaluative.</div>\n      ",
+  "diagramKey": "correctionWorkflow"
+}

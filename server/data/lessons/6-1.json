@@ -1,0 +1,9 @@
+{
+  "mi": 6,
+  "li": 1,
+  "moduleTitle": "Aller plus loin",
+  "title": "Usage multimodal : donner des images de travaux d'élèves, notes manuscrites",
+  "time": "20 min",
+  "body": "\n        <p>Les assistants IA récents peuvent analyser des images en plus du texte : une copie manuscrite, un schéma dessiné à la main, une photo de tableau.</p>\n        <ul>\n          <li>Prendre en photo un exercice manuscrit et demander à l'IA de repérer les erreurs de méthode (sans forcément corriger la note).</li>\n          <li>Photographier un schéma d'élève et demander des pistes d'amélioration.</li>\n        </ul>\n        <div class=\"callout\">💡 Retirez ou masquez le nom de l'élève sur la copie avant de la photographier et de l'envoyer à l'IA.</div>\n      ",
+  "diagramKey": null
+}

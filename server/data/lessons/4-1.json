@@ -1,0 +1,9 @@
+{
+  "mi": 4,
+  "li": 1,
+  "moduleTitle": "Créer des sites web simples",
+  "title": "Créer des fiches de révision ou quiz interactifs sous forme de page web",
+  "time": "20 min",
+  "body": "\n        <p>Une page web interactive permet aux élèves de s'auto-évaluer en autonomie, avec un retour immédiat sur leurs réponses — contrairement à une fiche papier statique.</p>\n        <ul>\n          <li>Décrivez le contenu à réviser (notions, questions).</li>\n          <li>Précisez le format souhaité (QCM, vrai/faux, association).</li>\n          <li>Demandez un retour immédiat affiché après chaque réponse.</li>\n        </ul>\n        <div class=\"callout\">💡 Testez toujours l'outil vous-même avant de le proposer aux élèves, pour vérifier que les questions et les corrections sont correctes.</div>\n      ",
+  "diagramKey": null
+}

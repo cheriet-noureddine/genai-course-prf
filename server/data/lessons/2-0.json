@@ -1,0 +1,9 @@
+{
+  "mi": 2,
+  "li": 0,
+  "moduleTitle": "Documents et contenus pédagogiques",
+  "title": "Résumer des lectures, articles et travaux d'élèves",
+  "time": "20 min",
+  "body": "\n        <p>L'IA excelle pour condenser un texte long en une synthèse exploitable — que ce soit un article destiné à vos élèves ou un travail rendu que vous souhaitez évaluer plus vite.</p>\n        <div class=\"example\">\n          <span class=\"ex-label\">Exemple</span>\n          <pre>Résume ce texte en 5 phrases maximum, pour des élèves de 3e.\nMets en avant l'idée principale et un exemple concret cité\ndans le texte.</pre>\n        </div>\n        <div class=\"callout\">💡 Pour un travail d'élève, retirez le nom avant de le coller, et demandez un résumé factuel plutôt qu'un jugement de valeur sur la qualité du travail.</div>\n      ",
+  "diagramKey": null
+}

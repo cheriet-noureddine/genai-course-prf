@@ -1,0 +1,9 @@
+{
+  "mi": 5,
+  "li": 2,
+  "moduleTitle": "Intégration dans le quotidien de classe",
+  "title": "Politique d'établissement, intégrité académique, apprendre aux élèves à bien utiliser l'IA",
+  "time": "25 min",
+  "body": "\n        <p>Chaque établissement peut avoir sa propre politique d'usage de l'IA — renseignez-vous avant de généraliser un outil avec vos classes.</p>\n        <p>Concernant les élèves, plutôt que d'interdire totalement l'IA (souvent inefficace), il est utile de leur apprendre :</p>\n        <ul>\n          <li>Quand son usage est autorisé, et quand il ne l'est pas, pour un devoir donné.</li>\n          <li>Comment citer ou signaler l'usage de l'IA de façon transparente.</li>\n          <li>Pourquoi vérifier systématiquement ce que l'IA produit avant de le rendre.</li>\n        </ul>\n        <div class=\"callout\">💡 Une règle claire et expliquée en amont évite bien des malentendus lors de la correction des copies.</div>\n      ",
+  "diagramKey": null
+}

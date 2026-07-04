@@ -1,0 +1,9 @@
+{
+  "mi": 3,
+  "li": 2,
+  "moduleTitle": "Créer des supports visuels et diaporamas",
+  "title": "Générer des images/schémas pour les apprenants visuels",
+  "time": "20 min",
+  "body": "\n        <p>Certains outils IA génèrent des images ou schémas à partir d'une description textuelle, utiles pour illustrer un concept abstrait.</p>\n        <div class=\"compare\">\n          <div class=\"card bad\"><span class=\"tag\">Description vague</span>\"Une image sur le système solaire.\"</div>\n          <div class=\"card good\"><span class=\"tag\">Description précise</span>\"Un schéma simple et coloré du système solaire, avec les planètes nommées, style illustration pour enfants de 8 à 10 ans.\"</div>\n        </div>\n        <div class=\"callout\">💡 Vérifiez toujours l'exactitude scientifique d'un schéma généré (proportions, ordre des planètes...) avant de l'utiliser en classe.</div>\n      ",
+  "diagramKey": null
+}

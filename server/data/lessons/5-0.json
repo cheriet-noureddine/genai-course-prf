@@ -1,0 +1,9 @@
+{
+  "mi": 5,
+  "li": 0,
+  "moduleTitle": "Intégration dans le quotidien de classe",
+  "title": "Créer des modèles de prompts réutilisables (\"mon prompt fiche de prep\")",
+  "time": "20 min",
+  "body": "\n        <p>Plutôt que de réinventer un prompt à chaque fois, gardez une version « modèle » que vous adaptez rapidement.</p>\n        <div class=\"example\">\n          <span class=\"ex-label\">Exemple — Modèle de prompt \"fiche de prep\"</span>\n          <pre>Crée une fiche de préparation pour une séance de [MATIÈRE],\nniveau [NIVEAU], durée [DURÉE]. Structure attendue : objectif,\ndéroulé en 3 temps, matériel nécessaire, évaluation finale.</pre>\n        </div>\n        <p>Il suffit ensuite de remplacer les crochets par les informations de votre séance du jour, ce qui fait gagner un temps précieux.</p>\n      ",
+  "diagramKey": "timeSavedChart"
+}

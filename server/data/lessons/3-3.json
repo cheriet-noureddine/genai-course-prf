@@ -1,0 +1,9 @@
+{
+  "mi": 3,
+  "li": 3,
+  "moduleTitle": "Créer des supports visuels et diaporamas",
+  "title": "Atelier : construire un diaporama de 6 diapositives à partir d'un thème",
+  "time": "20 min",
+  "body": "\n        <div class=\"exercise\">\n          <div class=\"ex-head\">🛠 Atelier</div>\n          <p>Choisissez un thème que vous enseignez prochainement.</p>\n          <ol>\n            <li>Listez les 6 grandes idées à couvrir (une par diapositive).</li>\n            <li>Demandez à l'IA de rédiger le titre et 3 points clés pour chaque diapositive.</li>\n            <li>Demandez ensuite des notes de présentateur pour 2 diapositives au choix.</li>\n            <li>Terminez par une diapositive de question de discussion pour clore le cours.</li>\n          </ol>\n        </div>\n      ",
+  "diagramKey": null
+}

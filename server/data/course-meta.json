@@ -1,0 +1,346 @@
+{
+  "parts": [
+    {
+      "label": "Partie 1 — Prendre ses marques",
+      "color": "var(--tab1)"
+    },
+    {
+      "label": "Partie 2 — Créer des contenus",
+      "color": "var(--tab2)"
+    },
+    {
+      "label": "Partie 3 — Intégrer au quotidien",
+      "color": "var(--tab3)"
+    },
+    {
+      "label": "Partie 4 — Aller plus loin",
+      "color": "var(--tab4)"
+    }
+  ],
+  "modules": [
+    {
+      "mi": 0,
+      "part": 0,
+      "num": "01",
+      "icon": "🧠",
+      "title": "Prendre ses marques avec l'IA",
+      "level": "Débutant",
+      "time": "1h30",
+      "lessons": [
+        {
+          "li": 0,
+          "title": "Qu'est-ce qu'un chatbot IA, en langage simple",
+          "time": "20 min",
+          "hasDiagram": false
+        },
+        {
+          "li": 1,
+          "title": "Confidentialité : ce qu'il ne faut jamais coller dans un chatbot",
+          "time": "15 min",
+          "hasDiagram": true
+        },
+        {
+          "li": 2,
+          "title": "Premiers prompts : accroche de cours, email aux parents, grille d'évaluation",
+          "time": "25 min",
+          "hasDiagram": false
+        },
+        {
+          "li": 3,
+          "title": "Comparer les outils : ChatGPT, Claude, Gemini, Copilot",
+          "time": "15 min",
+          "hasDiagram": true
+        },
+        {
+          "li": 4,
+          "title": "Prise en main : votre première conversation avec une IA",
+          "time": "10 min",
+          "hasDiagram": false
+        }
+      ],
+      "hasQuiz": true,
+      "quizTitle": "Quiz 1 — Prendre ses marques avec l'IA",
+      "quizCount": 5
+    },
+    {
+      "mi": 1,
+      "part": 0,
+      "num": "02",
+      "icon": "✍️",
+      "title": "Bien formuler ses prompts",
+      "level": "Débutant",
+      "time": "1h30",
+      "lessons": [
+        {
+          "li": 0,
+          "title": "Anatomie d'un bon prompt : public, format, contraintes",
+          "time": "20 min",
+          "hasDiagram": true
+        },
+        {
+          "li": 1,
+          "title": "Donner un rôle à l'IA (\"agis comme un spécialiste de la lecture en CM2...\")",
+          "time": "20 min",
+          "hasDiagram": false
+        },
+        {
+          "li": 2,
+          "title": "Demander des formats précis : tableaux, grilles à puces, QCM",
+          "time": "20 min",
+          "hasDiagram": false
+        },
+        {
+          "li": 3,
+          "title": "Erreurs courantes à éviter",
+          "time": "15 min",
+          "hasDiagram": false
+        },
+        {
+          "li": 4,
+          "title": "Atelier : transformer 3 demandes vagues en prompts précis",
+          "time": "15 min",
+          "hasDiagram": true
+        }
+      ],
+      "hasQuiz": true,
+      "quizTitle": "Quiz 2 — Bien formuler ses prompts",
+      "quizCount": 5
+    },
+    {
+      "mi": 2,
+      "part": 1,
+      "num": "03",
+      "icon": "📄",
+      "title": "Documents et contenus pédagogiques",
+      "level": "Intermédiaire",
+      "time": "2h",
+      "lessons": [
+        {
+          "li": 0,
+          "title": "Résumer des lectures, articles et travaux d'élèves",
+          "time": "20 min",
+          "hasDiagram": false
+        },
+        {
+          "li": 1,
+          "title": "Adapter un texte à différents niveaux de lecture",
+          "time": "20 min",
+          "hasDiagram": true
+        },
+        {
+          "li": 2,
+          "title": "Générer des quiz, fiches d'exercices et corrigés",
+          "time": "25 min",
+          "hasDiagram": false
+        },
+        {
+          "li": 3,
+          "title": "Rédiger des emails aux parents, notes de suivi, appréciations de bulletin",
+          "time": "20 min",
+          "hasDiagram": false
+        },
+        {
+          "li": 4,
+          "title": "Atelier : résumer un long PDF en une fiche d'une page pour les élèves",
+          "time": "15 min",
+          "hasDiagram": false
+        }
+      ],
+      "hasQuiz": true,
+      "quizTitle": "Quiz 3 — Documents et contenus pédagogiques",
+      "quizCount": 5
+    },
+    {
+      "mi": 3,
+      "part": 1,
+      "num": "04",
+      "icon": "🖼️",
+      "title": "Créer des supports visuels et diaporamas",
+      "level": "Intermédiaire",
+      "time": "1h30",
+      "lessons": [
+        {
+          "li": 0,
+          "title": "Transformer un plan de cours en diaporama avec l'IA",
+          "time": "20 min",
+          "hasDiagram": true
+        },
+        {
+          "li": 1,
+          "title": "Rédiger des notes de présentateur et des questions de discussion",
+          "time": "20 min",
+          "hasDiagram": false
+        },
+        {
+          "li": 2,
+          "title": "Générer des images/schémas pour les apprenants visuels",
+          "time": "20 min",
+          "hasDiagram": false
+        },
+        {
+          "li": 3,
+          "title": "Atelier : construire un diaporama de 6 diapositives à partir d'un thème",
+          "time": "20 min",
+          "hasDiagram": false
+        }
+      ],
+      "hasQuiz": true,
+      "quizTitle": "Quiz 4 — Créer des supports visuels et diaporamas",
+      "quizCount": 5
+    },
+    {
+      "mi": 4,
+      "part": 2,
+      "num": "05",
+      "icon": "🌐",
+      "title": "Créer des sites web simples",
+      "level": "Intermédiaire",
+      "time": "1h",
+      "lessons": [
+        {
+          "li": 0,
+          "title": "Utiliser l'IA pour créer un site de classe ou un portfolio, sans coder",
+          "time": "20 min",
+          "hasDiagram": false
+        },
+        {
+          "li": 1,
+          "title": "Créer des fiches de révision ou quiz interactifs sous forme de page web",
+          "time": "20 min",
+          "hasDiagram": false
+        },
+        {
+          "li": 2,
+          "title": "Atelier : générer une page de classe avec syllabus et liens ressources",
+          "time": "20 min",
+          "hasDiagram": false
+        }
+      ],
+      "hasQuiz": true,
+      "quizTitle": "Quiz 5 — Créer des sites web simples",
+      "quizCount": 4
+    },
+    {
+      "mi": 5,
+      "part": 2,
+      "num": "06",
+      "icon": "🧰",
+      "title": "Intégration dans le quotidien de classe",
+      "level": "Intermédiaire",
+      "time": "1h30",
+      "lessons": [
+        {
+          "li": 0,
+          "title": "Créer des modèles de prompts réutilisables (\"mon prompt fiche de prep\")",
+          "time": "20 min",
+          "hasDiagram": true
+        },
+        {
+          "li": 1,
+          "title": "Utiliser l'IA pour la correction et le feedback (avec garde-fous)",
+          "time": "25 min",
+          "hasDiagram": true
+        },
+        {
+          "li": 2,
+          "title": "Politique d'établissement, intégrité académique, apprendre aux élèves à bien utiliser l'IA",
+          "time": "25 min",
+          "hasDiagram": false
+        },
+        {
+          "li": 3,
+          "title": "Atelier : construire sa \"boîte à outils IA\" personnelle",
+          "time": "20 min",
+          "hasDiagram": false
+        }
+      ],
+      "hasQuiz": true,
+      "quizTitle": "Quiz 6 — Intégration dans le quotidien de classe",
+      "quizCount": 5
+    },
+    {
+      "mi": 6,
+      "part": 3,
+      "num": "07",
+      "icon": "🚀",
+      "title": "Aller plus loin",
+      "level": "Avancé",
+      "time": "1h",
+      "lessons": [
+        {
+          "li": 0,
+          "title": "Personnaliser un assistant IA pour sa matière/son niveau",
+          "time": "20 min",
+          "hasDiagram": false
+        },
+        {
+          "li": 1,
+          "title": "Usage multimodal : donner des images de travaux d'élèves, notes manuscrites",
+          "time": "20 min",
+          "hasDiagram": false
+        },
+        {
+          "li": 2,
+          "title": "Rester à jour et construire une habitude durable",
+          "time": "20 min",
+          "hasDiagram": true
+        }
+      ],
+      "hasQuiz": true,
+      "quizTitle": "Quiz 7 — Aller plus loin",
+      "quizCount": 5
+    }
+  ],
+  "finalProject": {
+    "title": "Concevoir une séquence pédagogique avec l'IA",
+    "time": "1h30",
+    "desc": "Mettez en pratique l'ensemble du cours en concevant une séquence pédagogique complète pour l'une de vos classes, en utilisant l'IA à chaque étape : du plan de cours jusqu'au message aux parents, en passant par le diaporama, la fiche d'exercices et le quiz.",
+    "deliverables": [
+      {
+        "icon": "🎯",
+        "name": "Plan de séquence",
+        "points": [
+          "Choisissez une classe, un niveau et un thème que vous enseignez prochainement.",
+          "Utilisez l'IA pour structurer un plan clair en 3 à 4 grandes étapes.",
+          "Précisez l'objectif pédagogique de la séquence."
+        ]
+      },
+      {
+        "icon": "🖼️",
+        "name": "Diaporama",
+        "points": [
+          "Transformez votre plan en trame de diaporama (Module 4).",
+          "Ajoutez des notes de présentateur pour au moins 2 diapositives.",
+          "Vérifiez et ajustez tout contenu factuel généré."
+        ]
+      },
+      {
+        "icon": "📝",
+        "name": "Fiche d'exercices",
+        "points": [
+          "Générez une fiche d'exercices adaptée au niveau de la classe (Module 3).",
+          "Incluez un corrigé séparé, relu et vérifié par vos soins.",
+          "Adaptez si besoin une version simplifiée pour la différenciation."
+        ]
+      },
+      {
+        "icon": "📋",
+        "name": "Quiz",
+        "points": [
+          "Créez un quiz de 5 à 8 questions pour vérifier la compréhension (Module 3).",
+          "Choisissez un format précis (QCM, vrai/faux...).",
+          "Testez le quiz vous-même avant de le prévoir pour la classe."
+        ]
+      },
+      {
+        "icon": "✉️",
+        "name": "Message aux parents",
+        "points": [
+          "Rédigez un court message présentant la séquence aux familles.",
+          "Choisissez un ton adapté à votre établissement (formel ou chaleureux).",
+          "Relisez pour vérifier qu'aucune donnée identifiante n'a été utilisée dans vos prompts."
+        ]
+      }
+    ]
+  }
+}

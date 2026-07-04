@@ -1,0 +1,12 @@
+{
+  "mi": 4,
+  "li": 3,
+  "moduleTitle": "System Prompts & Model Behavior",
+  "moduleNum": "05",
+  "moduleLevel": "Intermediate",
+  "partLabel": "Part 3 — Going Deeper",
+  "title": "Hallucinations: why they happen and how to reduce them",
+  "time": "20 min",
+  "body": "\n        <p>A <strong>hallucination</strong> is when an AI model confidently states something false — a made-up statistic, a fake citation, an incorrect fact — without any signal that it's uncertain.</p>\n        <p>Ways to reduce hallucinations:</p>\n        <ul>\n          <li><strong>Ground the model in real source material</strong> — provide the actual document/data rather than relying on its memory.</li>\n          <li><strong>Lower the temperature</strong> for factual tasks.</li>\n          <li><strong>Ask explicitly for uncertainty</strong> — \"If you're not confident about a fact, say so rather than guessing.\"</li>\n          <li><strong>Ask for sources</strong>, then independently verify them.</li>\n          <li><strong>Fact-check anything consequential</strong> — treat AI output on important facts the way you'd treat a tip from a knowledgeable but occasionally unreliable colleague.</li>\n        </ul>\n      ",
+  "diagramKey": null
+}

@@ -1,0 +1,9 @@
+{
+  "mi": 0,
+  "li": 3,
+  "moduleTitle": "Prendre ses marques avec l'IA",
+  "title": "Comparer les outils : ChatGPT, Claude, Gemini, Copilot",
+  "time": "15 min",
+  "body": "\n        <p>Il n'existe pas « une seule IA » : plusieurs entreprises proposent des assistants, avec des forces différentes.</p>\n        <ul>\n          <li><strong>ChatGPT (OpenAI)</strong> — très répandu, polyvalent pour la rédaction et les idées.</li>\n          <li><strong>Claude (Anthropic)</strong> — reconnu pour la qualité rédactionnelle et le traitement de documents longs.</li>\n          <li><strong>Gemini (Google)</strong> — intégré à l'écosystème Google (Docs, Gmail...).</li>\n          <li><strong>Copilot (Microsoft)</strong> — intégré à Word, PowerPoint et Teams.</li>\n        </ul>\n        <div class=\"callout\">💡 Avant de choisir un outil, vérifiez ce qui est gratuit, ce qui est autorisé par votre établissement, et ce qui s'intègre le mieux à vos habitudes (Google, Microsoft...).</div>\n      ",
+  "diagramKey": "toolsRadar"
+}

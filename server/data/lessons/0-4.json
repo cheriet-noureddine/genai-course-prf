@@ -1,0 +1,9 @@
+{
+  "mi": 0,
+  "li": 4,
+  "moduleTitle": "Prendre ses marques avec l'IA",
+  "title": "Prise en main : votre première conversation avec une IA",
+  "time": "10 min",
+  "body": "\n        <div class=\"exercise\">\n          <div class=\"ex-head\">🛠 Exercice pratique</div>\n          <p>Ouvrez un assistant IA (celui autorisé par votre établissement) et essayez trois choses :</p>\n          <ol>\n            <li>Demandez-lui de vous proposer une accroche pour un cours que vous connaissez bien. Observez la structure de la réponse.</li>\n            <li>Posez exactement la même question deux fois. Comparez les deux réponses : qu'est-ce qui change ?</li>\n            <li>Demandez-lui de rédiger un court email aux parents dans un ton que vous précisez (formel, chaleureux, humoristique).</li>\n          </ol>\n          <p>Notez ce qui vous a surpris — en bien comme en mal. Vous vous appuierez sur ces premières impressions tout au long du cours.</p>\n        </div>\n      ",
+  "diagramKey": null
+}

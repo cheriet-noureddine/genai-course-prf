@@ -1,0 +1,9 @@
+{
+  "mi": 3,
+  "li": 0,
+  "moduleTitle": "Créer des supports visuels et diaporamas",
+  "title": "Transformer un plan de cours en diaporama avec l'IA",
+  "time": "20 min",
+  "body": "\n        <p>À partir d'un plan de cours structuré, l'IA peut proposer une trame de diaporama : titres de diapositives, contenu résumé par diapositive, et suggestions de visuels.</p>\n        <div class=\"example\">\n          <span class=\"ex-label\">Exemple</span>\n          <pre>Voici mon plan de cours sur les états de la matière (3 parties :\nsolide, liquide, gaz). Transforme-le en un diaporama de 8\ndiapositives pour des élèves de 6e, avec un titre et 3 points\nclés maximum par diapositive.</pre>\n        </div>\n        <div class=\"callout\">💡 L'IA propose une trame de texte ; la mise en forme visuelle (couleurs, images) reste à faire dans votre logiciel de présentation habituel, éventuellement avec Claude pour PowerPoint.</div>\n      ",
+  "diagramKey": "planToSlides"
+}

@@ -1,0 +1,9 @@
+{
+  "mi": 4,
+  "li": 0,
+  "moduleTitle": "Créer des sites web simples",
+  "title": "Utiliser l'IA pour créer un site de classe ou un portfolio, sans coder",
+  "time": "20 min",
+  "body": "\n        <p>Des outils modernes permettent de décrire ce que vous voulez (\"un site de classe avec un accueil, un syllabus et une page ressources\") et de laisser l'IA générer la structure et les textes, sans écrire une ligne de code.</p>\n        <div class=\"example\">\n          <span class=\"ex-label\">Exemple</span>\n          <pre>Crée la structure d'un site de classe avec 3 pages : Accueil\n(présentation courte), Syllabus (grandes lignes de l'année),\net Ressources (liens utiles). Ton chaleureux, adapté à des\nparents et élèves de collège.</pre>\n        </div>\n        <div class=\"callout\">💡 Un portfolio peut aussi être utile pour valoriser les projets réalisés par une classe au fil de l'année.</div>\n      ",
+  "diagramKey": null
+}
