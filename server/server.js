@@ -61,16 +61,6 @@ function getSession(req) {
   }
   return s;
 }
-
-// Periodic sweep so expired sessions don't accumulate in memory forever
-// on a long-running process (they previously were only cleared lazily,
-// on the next request that happened to use that exact token).
-setInterval(() => {
-  const now = Date.now();
-  for (const [token, s] of sessions) {
-    if (now - s.createdAt > SESSION_TTL_MS) sessions.delete(token);
-  }
-}, 1000 * 60 * 30).unref(); // every 30 min; unref so it doesn't keep the process alive
 function requireAuth(req, res, next) {
   const session = getSession(req);
   if (!session) return res.status(401).json({ error: 'Non authentifié.' });
@@ -90,15 +80,6 @@ function verifyPassword(candidate) {
 // App setup
 // ---------------------------------------------------------------------------
 const app = express();
-
-// Only trust the proxy chain when explicitly deployed behind one (nginx,
-// Caddy, a load balancer, etc). Blindly trusting X-Forwarded-For when
-// there's no proxy in front would let a client spoof its own IP and
-// bypass rate limiting.
-if (process.env.TRUST_PROXY) {
-  app.set('trust proxy', 1);
-}
-
 app.use(express.json());
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, '..', 'public')));
@@ -106,15 +87,6 @@ app.use(express.static(path.join(__dirname, '..', 'public')));
 const loginLimiter = rateLimit({
   windowMs: 15 * 60 * 1000,
   max: 20,
-  message: { error: 'Trop de tentatives, réessayez plus tard.' },
-});
-
-// Applied to the quiz-grading endpoints too: without this, the small
-// number of options per question (usually 4) makes the correct answer
-// guessable by scripting repeated submits.
-const quizLimiter = rateLimit({
-  windowMs: 15 * 60 * 1000,
-  max: 60,
   message: { error: 'Trop de tentatives, réessayez plus tard.' },
 });
 
@@ -130,7 +102,6 @@ app.post('/api/auth/login', loginLimiter, (req, res) => {
   res.cookie(SESSION_COOKIE, token, {
     httpOnly: true,
     sameSite: 'lax',
-    secure: process.env.NODE_ENV === 'production',
     maxAge: SESSION_TTL_MS,
   });
   res.json({ ok: true });
@@ -182,7 +153,7 @@ app.get('/api/lesson/:mi/:li/quiz', requireAuth, (req, res) => {
 });
 
 // Grade the answer server-side; only now do we reveal correct/explain.
-app.post('/api/lesson/:mi/:li/quiz/submit', requireAuth, quizLimiter, (req, res) => {
+app.post('/api/lesson/:mi/:li/quiz/submit', requireAuth, (req, res) => {
   const key = `${req.params.mi}-${req.params.li}`;
   const quiz = lessonQuizzes[key];
   if (!quiz) return res.status(404).json({ error: 'Quiz introuvable.' });
@@ -208,7 +179,7 @@ app.get('/api/module/:mi/quiz', requireAuth, (req, res) => {
   });
 });
 
-app.post('/api/module/:mi/quiz/submit', requireAuth, quizLimiter, (req, res) => {
+app.post('/api/module/:mi/quiz/submit', requireAuth, (req, res) => {
   const mi = parseInt(req.params.mi, 10);
   const quiz = readModuleQuiz(mi);
   if (!quiz) return res.status(404).json({ error: 'Quiz de module introuvable.' });

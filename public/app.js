@@ -13,15 +13,6 @@ let toc = null;          // { parts, modules, finalProject } from /api/toc
 let FLAT = [];           // flattened [{type:'lesson',mi,li}|{type:'quiz',mi}|{type:'project'}]
 let currentIndex = -1;
 
-// Guards against overlapping navigation: clicking "Suivant"/"Précédent" (or
-// a sidebar item) multiple times in quick succession used to fire multiple
-// concurrent renders (each awaiting its own API call), and whichever fetch
-// resolved last would clobber the DOM the other one had just built,
-// sometimes hitting a mismatched index and throwing. goTo() now no-ops
-// while a navigation is already in flight; each render function releases
-// the lock once it has fully finished (including on its own error path).
-let navLock = false;
-
 async function api(path, opts) {
   const res = await fetch(API + path, {
     credentials: 'same-origin',
@@ -275,7 +266,6 @@ function renderHome() {
   document.getElementById('heroStartBtn').addEventListener('click', () => goTo(0));
   document.title = 'IA Générative pour Enseignants — Formation complète';
   updateOverallProgress();
-  navLock = false;
 }
 
 // ---------------------------------------------------------------------------
@@ -429,7 +419,7 @@ async function renderLesson(idx) {
 
   let lesson;
   try { lesson = await api(`/lesson/${item.mi}/${item.li}`); }
-  catch (e) { wrap.innerHTML = `<div class="loading">Erreur : ${e.message}</div>`; navLock = false; return; }
+  catch (e) { wrap.innerHTML = `<div class="loading">Erreur : ${e.message}</div>`; return; }
 
   wrap.innerHTML = `
     <div class="crumb">${toc.parts[m.part].label} · Module ${m.num} · ${m.title}</div>
@@ -461,7 +451,6 @@ async function renderLesson(idx) {
   document.title = lesson.title + ' — Formation IA';
   window.scrollTo(0, 0);
   closeSidebar();
-  navLock = false;
 }
 
 function toggleDone(k) {
@@ -488,7 +477,7 @@ async function renderQuiz(idx) {
 
   let quiz;
   try { quiz = await api(`/module/${item.mi}/quiz`); }
-  catch (e) { wrap.innerHTML = `<div class="loading">Erreur : ${e.message}</div>`; navLock = false; return; }
+  catch (e) { wrap.innerHTML = `<div class="loading">Erreur : ${e.message}</div>`; return; }
 
   let qHtml = '';
   quiz.questions.forEach((q, qi) => {
@@ -600,7 +589,6 @@ async function renderQuiz(idx) {
 
   window.scrollTo(0, 0);
   closeSidebar();
-  navLock = false;
 }
 
 // ---------------------------------------------------------------------------
@@ -647,7 +635,6 @@ function renderProject() {
   document.getElementById('prevBtn').addEventListener('click', () => goTo(idx - 1));
   window.scrollTo(0, 0);
   closeSidebar();
-  navLock = false;
 }
 
 // ---------------------------------------------------------------------------
@@ -680,8 +667,6 @@ function transitionTo(fn) {
 }
 
 function goTo(idx) {
-  if (navLock) return;
-  navLock = true;
   if (idx < 0) { transitionTo(renderHome); return; }
   if (idx >= FLAT.length) { transitionTo(renderProject); return; }
   const item = FLAT[idx];
