@@ -1,12 +1,14 @@
 const express = require('express');
 const cookieParser = require('cookie-parser');
 const rateLimit = require('express-rate-limit');
+const helmet = require('helmet');
 const crypto = require('crypto');
 const fs = require('fs');
 const path = require('path');
 
 const DATA = path.join(__dirname, 'data');
 const PORT = process.env.PORT || 3000;
+const IS_PROD = process.env.NODE_ENV === 'production';
 
 // ---------------------------------------------------------------------------
 // Data loaded once at boot. In a real deployment swap these for DB reads
@@ -68,6 +70,18 @@ function requireAuth(req, res, next) {
   next();
 }
 
+// Periodic sweep so expired sessions that are never re-visited (and so never
+// hit the lazy-expiry check inside getSession) don't just accumulate in
+// memory forever on a long-running process.
+const SESSION_SWEEP_INTERVAL_MS = 1000 * 60 * 15; // 15 min
+const sessionSweepTimer = setInterval(() => {
+  const now = Date.now();
+  for (const [token, s] of sessions) {
+    if (now - s.createdAt > SESSION_TTL_MS) sessions.delete(token);
+  }
+}, SESSION_SWEEP_INTERVAL_MS);
+sessionSweepTimer.unref(); // don't keep the process alive just for this timer
+
 function verifyPassword(candidate) {
   const hash = crypto.scryptSync(candidate, authConfig.salt, 64).toString('hex');
   // timing-safe compare
@@ -80,6 +94,24 @@ function verifyPassword(candidate) {
 // App setup
 // ---------------------------------------------------------------------------
 const app = express();
+
+// When deployed behind a reverse proxy (nginx, Caddy, a load balancer, etc.)
+// express needs to know so req.ip / X-Forwarded-For is trusted correctly;
+// otherwise express-rate-limit ends up counting requests against the
+// proxy's IP instead of the real client's, which defeats the login/quiz
+// limiters below. Set TRUST_PROXY=1 (or the number of hops) in production.
+if (process.env.TRUST_PROXY) {
+  const tp = process.env.TRUST_PROXY;
+  app.set('trust proxy', tp === 'true' ? 1 : (Number.isNaN(Number(tp)) ? tp : Number(tp)));
+}
+
+// Security headers. CSP is left off because the lesson/diagram content
+// intentionally uses inline <script> tags and onclick="" handlers (see
+// loadDiagram in public/app.js) - a default CSP would break those. Every
+// other helmet protection (X-Frame-Options, X-Content-Type-Options,
+// Referrer-Policy, etc.) still applies.
+app.use(helmet({ contentSecurityPolicy: false }));
+
 app.use(express.json());
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, '..', 'public')));
@@ -87,6 +119,16 @@ app.use(express.static(path.join(__dirname, '..', 'public')));
 const loginLimiter = rateLimit({
   windowMs: 15 * 60 * 1000,
   max: 20,
+  message: { error: 'Trop de tentatives, réessayez plus tard.' },
+});
+
+// Quiz options are few (usually 4), so without a limiter here someone could
+// script-guess correct answers by hammering /quiz/submit. Same shape as
+// loginLimiter, kept as its own instance so quiz attempts and login attempts
+// don't share one counter.
+const quizSubmitLimiter = rateLimit({
+  windowMs: 15 * 60 * 1000,
+  max: 30,
   message: { error: 'Trop de tentatives, réessayez plus tard.' },
 });
 
@@ -102,6 +144,7 @@ app.post('/api/auth/login', loginLimiter, (req, res) => {
   res.cookie(SESSION_COOKIE, token, {
     httpOnly: true,
     sameSite: 'lax',
+    secure: IS_PROD, // requires HTTPS; only safe to force on once actually deployed behind TLS
     maxAge: SESSION_TTL_MS,
   });
   res.json({ ok: true });
@@ -153,7 +196,7 @@ app.get('/api/lesson/:mi/:li/quiz', requireAuth, (req, res) => {
 });
 
 // Grade the answer server-side; only now do we reveal correct/explain.
-app.post('/api/lesson/:mi/:li/quiz/submit', requireAuth, (req, res) => {
+app.post('/api/lesson/:mi/:li/quiz/submit', requireAuth, quizSubmitLimiter, (req, res) => {
   const key = `${req.params.mi}-${req.params.li}`;
   const quiz = lessonQuizzes[key];
   if (!quiz) return res.status(404).json({ error: 'Quiz introuvable.' });
@@ -179,7 +222,7 @@ app.get('/api/module/:mi/quiz', requireAuth, (req, res) => {
   });
 });
 
-app.post('/api/module/:mi/quiz/submit', requireAuth, (req, res) => {
+app.post('/api/module/:mi/quiz/submit', requireAuth, quizSubmitLimiter, (req, res) => {
   const mi = parseInt(req.params.mi, 10);
   const quiz = readModuleQuiz(mi);
   if (!quiz) return res.status(404).json({ error: 'Quiz de module introuvable.' });

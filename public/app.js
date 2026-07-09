@@ -272,9 +272,11 @@ function renderHome() {
 // Diagrams: fetched only when the lesson that needs them is open.
 // ---------------------------------------------------------------------------
 async function loadDiagram(key, container) {
+  const myToken = navToken;
   let diagram;
   try { diagram = await api(`/diagram/${key}`); }
   catch (e) { return; }
+  if (myToken !== navToken) return; // the lesson this diagram belonged to has since been navigated away from
 
   const wrapper = document.createElement('div');
   wrapper.innerHTML = diagram.html;
@@ -315,10 +317,16 @@ async function loadDiagram(key, container) {
 // side ahead of time).
 // ---------------------------------------------------------------------------
 async function buildLessonQuiz(mi, li, container) {
+  const myToken = navToken;
   const key = `${mi}-${li}`;
   let quiz;
   try { quiz = await api(`/lesson/${mi}/${li}/quiz`); }
   catch (e) { return; } // no quiz for this lesson
+  // If the user has since navigated to a different page, `container` is a
+  // detached node from the lesson we started loading for - appending to it
+  // and then looking elements up via document.getElementById (which only
+  // searches the live document) would find nothing and throw. Bail instead.
+  if (myToken !== navToken) return;
 
   const saved = progress.lessonQuiz[key];
   const answered = !!saved;
@@ -406,6 +414,7 @@ function resetLQ(mi, li) {
 // Fetch and render ONE lesson. Nothing else is downloaded until clicked.
 // ---------------------------------------------------------------------------
 async function renderLesson(idx) {
+  const myToken = navToken;
   currentIndex = idx;
   setActiveNav(idx);
   const item = FLAT[idx];
@@ -419,7 +428,8 @@ async function renderLesson(idx) {
 
   let lesson;
   try { lesson = await api(`/lesson/${item.mi}/${item.li}`); }
-  catch (e) { wrap.innerHTML = `<div class="loading">Erreur : ${e.message}</div>`; return; }
+  catch (e) { if (myToken !== navToken) return; wrap.innerHTML = `<div class="loading">Erreur : ${e.message}</div>`; return; }
+  if (myToken !== navToken) return; // a newer navigation started while this was loading
 
   wrap.innerHTML = `
     <div class="crumb">${toc.parts[m.part].label} · Module ${m.num} · ${m.title}</div>
@@ -467,6 +477,7 @@ function toggleDone(k) {
 // Module quiz: questions without answers, then grade on submit.
 // ---------------------------------------------------------------------------
 async function renderQuiz(idx) {
+  const myToken = navToken;
   currentIndex = idx;
   setActiveNav(idx);
   const item = FLAT[idx];
@@ -477,7 +488,8 @@ async function renderQuiz(idx) {
 
   let quiz;
   try { quiz = await api(`/module/${item.mi}/quiz`); }
-  catch (e) { wrap.innerHTML = `<div class="loading">Erreur : ${e.message}</div>`; return; }
+  catch (e) { if (myToken !== navToken) return; wrap.innerHTML = `<div class="loading">Erreur : ${e.message}</div>`; return; }
+  if (myToken !== navToken) return; // a newer navigation started while this was loading
 
   let qHtml = '';
   quiz.questions.forEach((q, qi) => {
@@ -645,20 +657,41 @@ function wirePrevNext(idx) {
   const nextBtn = document.getElementById('nextBtn');
   if (prevBtn) {
     prevBtn.disabled = idx <= 0;
-    prevBtn.addEventListener('click', () => { if (idx > 0) goTo(idx - 1); });
+    prevBtn.addEventListener('click', () => {
+      if (idx <= 0) return;
+      prevBtn.disabled = true;
+      if (nextBtn) nextBtn.disabled = true;
+      goTo(idx - 1);
+    });
   }
   if (nextBtn) {
     const isLast = idx >= FLAT.length - 1;
     nextBtn.textContent = isLast ? 'Aller au projet final →' : 'Suivant →';
-    nextBtn.addEventListener('click', () => goTo(idx + 1));
+    nextBtn.addEventListener('click', () => {
+      nextBtn.disabled = true;
+      if (prevBtn) prevBtn.disabled = true;
+      goTo(idx + 1);
+    });
   }
   wireNavKeyboard();
 }
 
+// Bumped on every navigation request. Async render functions (renderLesson,
+// renderQuiz, and the async pieces they kick off - buildLessonQuiz,
+// loadDiagram) capture the token in effect when they start and check it
+// again after each await; if it no longer matches, a newer navigation has
+// since started and they abandon their update instead of touching the DOM.
+// This is what makes clicking "Suivant"/"Précédent" repeatedly (or any nav
+// item) in quick succession safe instead of racing overlapping renders
+// against each other, which is what used to throw errors on rapid clicks.
+let navToken = 0;
+
 function transitionTo(fn) {
+  const myToken = ++navToken;
   const wrap = document.getElementById('contentWrap');
   wrap.classList.add('fade-out');
   setTimeout(() => {
+    if (myToken !== navToken) return; // superseded by a newer navigation
     wrap.classList.remove('fade-out');
     fn();
     wrap.classList.add('fade-in');
