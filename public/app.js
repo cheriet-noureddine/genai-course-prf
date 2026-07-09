@@ -249,7 +249,7 @@ function renderHome() {
         <div class="hero-stat"><span class="hstat-num">${toc.modules.length}</span><span class="hstat-label">Modules</span></div>
         <div class="hero-stat"><span class="hstat-num">${toc.modules.reduce((n, m) => n + m.lessons.length, 0)}</span><span class="hstat-label">Leçons</span></div>
         <div class="hero-stat"><span class="hstat-num">${toc.modules.reduce((n, m) => n + m.lessons.length + (m.hasQuiz ? 1 : 0), 0)}</span><span class="hstat-label">Quiz</span></div>
-        <div class="hero-stat"><span class="hstat-num">11h30</span><span class="hstat-label">Durée totale</span></div>
+        <div class="hero-stat"><span class="hstat-num">16h</span><span class="hstat-label">Durée totale</span></div>
       </div>
       <button class="start-btn" id="heroStartBtn">Commencer →</button>
       <div class="howto" style="margin-top:28px;">
