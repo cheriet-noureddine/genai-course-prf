@@ -40,28 +40,53 @@ function readDiagram(key) {
 }
 
 // ---------------------------------------------------------------------------
-// Minimal in-memory session store. Swap for Redis/DB in production so
-// sessions survive restarts and work across multiple server instances.
+// Stateless, signed-cookie sessions.
+//
+// This used to be `const sessions = new Map()` (token -> {createdAt}) kept
+// in server memory. That works fine on a single long-running Node process,
+// but breaks on serverless deployments (e.g. Vercel): each request can be
+// routed to a different, independent function instance, and each instance
+// has its OWN empty Map. A login on instance A is invisible to instance B,
+// so any later request that happens to land on a different instance gets a
+// spurious 401 - which is exactly what caused lesson content/quizzes to
+// intermittently vanish while clicking through the course (the client
+// treats a failed quiz fetch as "no quiz for this lesson" and just skips
+// it), and occasional "not authenticated" errors while paging forward.
+//
+// Fix: the session token itself carries its own proof of validity (an
+// HMAC signature), so ANY instance can verify it with no shared state and
+// no database/Redis needed. `getSession` below is a pure function of the
+// cookie value.
 // ---------------------------------------------------------------------------
-const sessions = new Map(); // token -> { createdAt }
 const SESSION_COOKIE = 'genai_session';
 const SESSION_TTL_MS = 1000 * 60 * 60 * 12; // 12h
+const SESSION_SECRET = process.env.SESSION_SECRET || authConfig.salt || 'genai-course-fallback-secret';
+
+function sign(payloadB64) {
+  return crypto.createHmac('sha256', SESSION_SECRET).update(payloadB64).digest('hex');
+}
 
 function createSession() {
-  const token = crypto.randomBytes(24).toString('hex');
-  sessions.set(token, { createdAt: Date.now() });
-  return token;
+  const payloadB64 = Buffer.from(JSON.stringify({ iat: Date.now() })).toString('base64url');
+  return `${payloadB64}.${sign(payloadB64)}`;
 }
+
 function getSession(req) {
   const token = req.cookies[SESSION_COOKIE];
-  if (!token) return null;
-  const s = sessions.get(token);
-  if (!s) return null;
-  if (Date.now() - s.createdAt > SESSION_TTL_MS) {
-    sessions.delete(token);
-    return null;
-  }
-  return s;
+  if (!token || typeof token !== 'string') return null;
+  const dot = token.lastIndexOf('.');
+  if (dot === -1) return null;
+  const payloadB64 = token.slice(0, dot);
+  const sig = token.slice(dot + 1);
+  const expected = sign(payloadB64);
+  const sigBuf = Buffer.from(sig, 'hex');
+  const expectedBuf = Buffer.from(expected, 'hex');
+  if (sigBuf.length !== expectedBuf.length || !crypto.timingSafeEqual(sigBuf, expectedBuf)) return null;
+  let payload;
+  try { payload = JSON.parse(Buffer.from(payloadB64, 'base64url').toString('utf8')); }
+  catch { return null; }
+  if (!payload || typeof payload.iat !== 'number' || Date.now() - payload.iat > SESSION_TTL_MS) return null;
+  return { createdAt: payload.iat };
 }
 function requireAuth(req, res, next) {
   const session = getSession(req);
@@ -69,18 +94,6 @@ function requireAuth(req, res, next) {
   req.session = session;
   next();
 }
-
-// Periodic sweep so expired sessions that are never re-visited (and so never
-// hit the lazy-expiry check inside getSession) don't just accumulate in
-// memory forever on a long-running process.
-const SESSION_SWEEP_INTERVAL_MS = 1000 * 60 * 15; // 15 min
-const sessionSweepTimer = setInterval(() => {
-  const now = Date.now();
-  for (const [token, s] of sessions) {
-    if (now - s.createdAt > SESSION_TTL_MS) sessions.delete(token);
-  }
-}, SESSION_SWEEP_INTERVAL_MS);
-sessionSweepTimer.unref(); // don't keep the process alive just for this timer
 
 function verifyPassword(candidate) {
   const hash = crypto.scryptSync(candidate, authConfig.salt, 64).toString('hex');
@@ -167,8 +180,6 @@ app.post('/api/auth/login', loginLimiter, (req, res) => {
 });
 
 app.post('/api/auth/logout', (req, res) => {
-  const token = req.cookies[SESSION_COOKIE];
-  if (token) sessions.delete(token);
   res.clearCookie(SESSION_COOKIE);
   res.json({ ok: true });
 });
