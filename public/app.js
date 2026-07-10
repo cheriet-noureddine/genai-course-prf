@@ -379,7 +379,12 @@ async function buildLessonQuiz(mi, li, container) {
       let result;
       try {
         result = await api(`/lesson/${mi}/${li}/quiz/submit`, { method: 'POST', body: JSON.stringify({ selected }) });
-      } catch (e) { submitBtn.disabled = false; return; }
+      } catch (e) {
+        submitBtn.disabled = false;
+        const fb = document.getElementById(`lqfb-${mi}-${li}`);
+        if (fb) { fb.textContent = '⚠️ ' + e.message; fb.className = 'lq-feedback show wrong-fb'; }
+        return;
+      }
       progress.lessonQuiz[key] = { selected, correct: result.correct, correctIndex: result.correctIndex, explain: result.explain };
       saveProgress(progress);
 
@@ -577,7 +582,13 @@ async function renderQuiz(idx) {
     let result;
     try {
       result = await api(`/module/${item.mi}/quiz/submit`, { method: 'POST', body: JSON.stringify({ answers }) });
-    } catch (e) { submitBtn.disabled = false; return; }
+    } catch (e) {
+      submitBtn.disabled = false;
+      const el = document.getElementById('quizResult');
+      el.className = 'quiz-result show fail';
+      el.innerHTML = `<p>⚠️ ${e.message}</p>`;
+      return;
+    }
     progress.quizScores[k] = { answers: answers.slice(), submitted: true, score: result.score, total: result.total, results: result.results };
     saveProgress(progress);
     lockAndReveal(result.results, answers);

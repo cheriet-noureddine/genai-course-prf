@@ -126,9 +126,25 @@ const loginLimiter = rateLimit({
 // script-guess correct answers by hammering /quiz/submit. Same shape as
 // loginLimiter, kept as its own instance so quiz attempts and login attempts
 // don't share one counter.
+//
+// IMPORTANT: this must be keyed per-quiz (session + route), not just per
+// IP/session globally. The course has 29 lesson quizzes + 7 module quizzes
+// = 36 legitimate submit calls to finish it once, with zero retries. A
+// single shared counter capped at 30 meant every student got hard-blocked
+// with a 429 partway through the course just from normal progress - not
+// from abuse. Scoping the key to req.originalUrl keeps the brute-force
+// protection meaningful (30 attempts on the SAME question in 15 minutes is
+// still plenty to catch script-guessing) without that budget being drained
+// by simply moving through the rest of the course.
 const quizSubmitLimiter = rateLimit({
   windowMs: 15 * 60 * 1000,
   max: 30,
+  standardHeaders: true,
+  legacyHeaders: false,
+  keyGenerator: (req) => {
+    const token = req.cookies && req.cookies[SESSION_COOKIE];
+    return `${token || req.ip}:${req.originalUrl}`;
+  },
   message: { error: 'Trop de tentatives, réessayez plus tard.' },
 });
 
